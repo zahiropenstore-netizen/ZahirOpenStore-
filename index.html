@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="ZahirOpenStore - Pakistan's most trusted source for pure desi honey, organic ghee and natural products. 100% pure, lab tested, cash on delivery.">
+<meta name="keywords" content="pure desi honey pakistan, wild honey, desi ghee, dry fruit honey, date honey, panjeeri, organic products pakistan, zahir desi store">
+<meta name="theme-color" content="#064e3b">
+<title>ZahirOpenStore | خالص دیسی شہد اور آرگینک پروڈکٹس</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════
+   ROOT VARIABLES
+═══════════════════════════════════════════ */
+:root {
+  --g900: #022c22;
+  --g800: #064e3b;
+  --g700: #065f46;
+  --g600: #047857;
+  --g500: #059669;
+  --g400: #10b981;
+  --g300: #34d399;
+  --g200: #a7f3d0;
+  --g100: #d1fae5;
+  --g50:  #ecfdf5;
+
+  --gold: #f59e0b;
+  --gold-d: #d97706;
+  --gold-l: #fef3c7;
+  --gold-pale: #fffbeb;
+
+  --red: #dc2626;
+  --red-l: #fee2e2;
+
+  --dark: #0f1f18;
+  --text: #111827;
+  --text-2: #374151;
+  --text-3: #6b7280;
+  --text-4: #9ca3af;
+  --border: #e5e7eb;
+  --bg: #f9fafb;
+  --white: #ffffff;
+
+  --font-en: 'Plus Jakarta Sans', sans-serif;
+  --font-ur: 'Noto Nastaliq Urdu', serif;
+  --font-display: 'Cormorant Garamond', serif;
+
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r:    16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+
+  --sh-sm: 0 1px 4px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.04);
+  --sh:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.04);
+  --sh-lg: 0 16px 48px rgba(0,0,0,.12), 0 4px 16px rgba(0,0,0,.06);
+  --sh-g:  0 8px 32px rgba(6,95,70,.22);
+  --sh-gold: 0 6px 24px rgba(245,158,11,.3);
+
+  --ease: cubic-bezier(.4,0,.2,1);
+  --t: all .22s var(--ease);
+}
+
+/* ═══════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-en);background:var(--white);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:inherit;border:none;outline:none}
+ul,ol{list-style:none}
+input,select,textarea{font-family:inherit;outline:none}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--g50)}
+::-webkit-scrollbar-thumb{background:var(--g400);border-radius:3px}
+
+.ur{font-family:var(--font-ur);line-height:1.9}
+.display{font-family:var(--font-display)}
+.container{max-width:1320px;margin:0 auto;padding:0 24px}
+
+/* ═══════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 26px;border-radius:var(--r-sm);font-weight:600;font-size:14px;transition:var(--t);border:none;white-space:nowrap;letter-spacing:.2px}
+.btn-green{background:linear-gradient(135deg,var(--g600),var(--g700));color:var(--white);box-shadow:var(--sh-g)}
+.btn-green:hover{background:linear-gradient(135deg,var(--g700),var(--g900));transform:translateY(-2px);box-shadow:0 12px 40px rgba(6,95,70,.35)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--white);box-shadow:var(--sh-gold)}
+.btn-gold:hover{background:linear-gradient(135deg,var(--gold-d),#b45309);transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:var(--white);box-shadow:0 6px 24px rgba(37,211,102,.35)}
+.btn-wa:hover{background:#128c4e;transform:translateY(-2px)}
+.btn-outline{background:transparent;border:2px solid var(--g600);color:var(--g600)}
+.btn-outline:hover{background:var(--g600);color:var(--white)}
+.btn-ghost{background:var(--bg);color:var(--text-2)}
+.btn-ghost:hover{background:var(--border)}
+.btn-danger{background:var(--red);color:white}
+.btn-lg{padding:15px 36px;font-size:16px;border-radius:var(--r)}
+.btn-sm{padding:8px 16px;font-size:12px;border-radius:var(--r-xs)}
+.btn-block{width:100%;display:flex}
+.btn-icon{width:40px;height:40px;padding:0;border-radius:50%}
+
+/* ═══════════════════════════════════════════
+   ANNOUNCE BAR
+═══════════════════════════════════════════ */
+.announce{
+  background:var(--g800);
+  overflow:hidden;
+  height:38px;
+  display:flex;
+  align-items:center;
+}
+.announce-track{
+  display:flex;
+  gap:80px;
+  animation:marquee 30s linear infinite;
+  white-space:nowrap;
+}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.announce-item{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:rgba(255,255,255,.9);
+  font-size:12.5px;
+  letter-spacing:.3px;
+}
+.announce-item strong{color:var(--gold)}
+.announce-item .dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.3)}
+
+/* ═══════════════════════════════════════════
+   HEADER
+═══════════════════════════════════════════ */
+.header{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:800;
+  box-shadow:var(--sh-sm);
+}
+.header-inner{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:20px;
+  padding:14px 24px;
+  max-width:1320px;
+  margin:0 auto;
+}
+
+/* Logo */
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-icon{
+  width:48px;height:48px;
+  background:linear-gradient(135deg,var(--g700),var(--g900));
+  border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;
+  flex-shrink:0;
+  box-shadow:var(--sh-g);
+}
+.logo-text{line-height:1.1}
+.logo-name{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--g800);letter-spacing:-.3px}
+.logo-name span{color:var(--gold)}
+.logo-tag{font-size:10px;color:var(--text-3);letter-spacing:.8px;text-transform:uppercase;font-family:var(--font-ur);font-size:11px}
+
+/* Search */
+.search-wrap{
+  display:flex;
+  background:var(--bg);
+  border:1.5px solid var(--border);
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  transition:var(--t);
+}
+.search-wrap:focus-within{border-color:var(--g400);background:var(--white);box-shadow:0 0 0 3px rgba(16,185,129,.12)}
+.search-input{
+  flex:1;border:none;background:transparent;
+  padding:11px 16px;font-size:14px;
+  color:var(--text);direction:rtl;
+}
+.search-input::placeholder{font-family:var(--font-ur);font-size:12px;color:var(--text-4)}
+.search-btn{
+  background:var(--g600);border:none;color:var(--white);
+  padding:0 20px;font-size:18px;transition:var(--t);
+}
+.search-btn:hover{background:var(--g800)}
+
+/* Header Actions */
+.header-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.hdr-action{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:8px 12px;border-radius:var(--r-sm);
+  background:transparent;border:none;color:var(--text-2);
+  font-size:10px;font-family:var(--font-ur);
+  transition:var(--t);cursor:pointer;position:relative;
+}
+.hdr-action:hover{background:var(--g50);color:var(--g600)}
+.hdr-action .ico{font-size:22px;line-height:1}
+.cart-num{
+  position:absolute;top:4px;right:6px;
+  background:var(--red);color:var(--white);
+  width:18px;height:18px;border-radius:50%;
+  font-size:10px;font-weight:700;font-family:var(--font-en);
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--white);
+}
+.wa-btn-header{
+  background:#25d366;color:var(--white);
+  padding:10px 18px;border-radius:var(--r-sm);
+  font-size:13px;font-weight:700;font-family:var(--font-ur);
+  display:flex;align-items:center;gap:7px;
+  transition:var(--t);border:none;
+}
+.wa-btn-header:hover{background:#128c4e;transform:translateY(-1px)}
+
+/* ═══════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════ */
+.nav{
+  background:linear-gradient(90deg,var(--g800) 0%,var(--g700) 100%);
+  border-bottom:2px solid var(--g600);
+}
+.nav-inner{
+  max-width:1320px;margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;
+  overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;
+}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-a{
+  padding:13px 18px;color:rgba(255,255,255,.8);
+  font-size:13.5px;font-weight:500;
+  white-space:nowrap;border-bottom:3px solid transparent;
+  transition:var(--t);display:flex;align-items:center;gap:7px;
+}
+.nav-a:hover,.nav-a.active{color:var(--white);border-bottom-color:var(--gold)}
+.nav-a.hot{color:var(--gold)}
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--g900) 0%,var(--g800) 50%,var(--g700) 100%);
+  min-height:520px;display:flex;align-items:center;
+}
+.hero-mesh{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 60% at 15% 50%,rgba(245,158,11,.1) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 20%,rgba(16,185,129,.12) 0%,transparent 55%),
+    radial-gradient(ellipse 30% 30% at 70% 80%,rgba(245,158,11,.07) 0%,transparent 50%);
+}
+.hero-grid-overlay{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+
+.hero-slides{display:flex;transition:transform .7s var(--ease);height:100%}
+.hero-slide{min-width:100%;padding:64px 0}
+.hero-content{
+  max-width:1320px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:60px;align-items:center;
+}
+
+/* Hero text */
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(245,158,11,.18);
+  border:1px solid rgba(245,158,11,.35);
+  color:var(--gold);padding:6px 16px;border-radius:20px;
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  margin-bottom:20px;
+}
+.hero-h1{
+  font-family:var(--font-ur);font-size:46px;
+  color:var(--white);font-weight:700;
+  line-height:1.6;margin-bottom:6px;
+  text-shadow:0 2px 20px rgba(0,0,0,.25);
+}
+.hero-sub-en{
+  font-family:var(--font-display);font-size:22px;font-style:italic;
+  color:var(--g300);margin-bottom:20px;
+}
+.hero-desc{font-family:var(--font-ur);font-size:16px;color:rgba(255,255,255,.75);line-height:2;margin-bottom:32px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+
+/* Hero visual */
+.hero-visual{display:flex;align-items:center;justify-content:center;position:relative}
+.hero-honeycomb{
+  position:absolute;width:480px;height:480px;
+  background:radial-gradient(circle,rgba(245,158,11,.14) 0%,transparent 70%);
+  border-radius:50%;animation:pulse-glow 4s ease-in-out infinite;
+}
+@keyframes pulse-glow{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.08);opacity:1}}
+.hero-emoji{
+  font-size:200px;position:relative;z-index:1;
+  filter:drop-shadow(0 20px 48px rgba(0,0,0,.35));
+  animation:float 3.5s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-20px) rotate(2deg)}}
+.hero-pills{
+  position:absolute;display:flex;flex-direction:column;gap:10px;
+  right:-10px;top:50%;transform:translateY(-50%);
+}
+.hero-pill{
+  background:rgba(255,255,255,.1);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.2);
+  color:var(--white);padding:9px 16px;border-radius:var(--r-sm);
+  font-size:12px;display:flex;align-items:center;gap:8px;
+  white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.15);
+}
+.hero-pill-icon{font-size:18px}
+
+.hero-stats{
+  position:absolute;bottom:28px;left:40px;
+  display:flex;gap:48px;
+}
+.h-stat{text-align:center;color:var(--white)}
+.h-stat-num{font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);line-height:1}
+.h-stat-lbl{font-family:var(--font-ur);font-size:11px;color:rgba(255,255,255,.6);margin-top:4px}
+
+.hero-dots{
+  position:absolute;bottom:24px;right:50%;transform:translateX(50%);
+  display:flex;gap:8px;
+}
+.h-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(255,255,255,.3);border:none;
+  transition:var(--t);cursor:pointer;
+}
+.h-dot.on{background:var(--gold);width:28px;border-radius:4px}
+
+/* ═══════════════════════════════════════════
+   TRUST STRIP
+═══════════════════════════════════════════ */
+.trust-strip{background:var(--white);border-bottom:1px solid var(--border);padding:20px 0}
+.trust-grid{
+  max-width:1320px;margin:0 auto;padding:0 24px;
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.trust-item{
+  display:flex;align-items:center;gap:14px;
+  padding:0 28px;border-right:1px solid var(--border);direction:rtl;
+}
+.trust-item:last-child{border-right:none}
+.trust-ico{
+  width:50px;height:50px;background:var(--g50);
+  border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;
+  font-size:24px;flex-shrink:0;border:1px solid var(--g100);
+}
+.trust-ttl{font-family:var(--font-ur);font-size:14px;font-weight:700;color:var(--g700)}
+.trust-sub{font-size:11px;color:var(--text-3);margin-top:3px}
+
+/* ═══════════════════════════════════════════
+   FLASH SALE
+═══════════════════════════════════════════ */
+.flash-wrap{
+  background:linear-gradient(135deg,var(--g800),var(--g700));
+  padding:42px 0;position:relative;overflow:hidden;
+}
+.flash-wrap::before{
+  content:'⚡';position:absolute;right:-30px;top:50%;transform:translateY(-50%);
+  font-size:250px;opacity:.04;line-height:1;pointer-events:none;
+}
+.flash-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:30px;direction:rtl;
+}
+.flash-left{display:flex;align-items:center;gap:16px;direction:rtl}
+.flash-badge-pill{
+  background:var(--gold);color:var(--g900);
+  padding:7px 22px;border-radius:20px;
+  font-family:var(--font-ur);font-size:15px;font-weight:700;
+  animation:badge-pulse 2.5s ease-in-out infinite;
+}
+@keyframes badge-pulse{0%,100%{box-shadow:0 0 0 0 rgba(245,158,11,.5)}50%{box-shadow:0 0 0 10px rgba(245,158,11,0)}}
+.flash-title{color:var(--white);font-family:var(--font-ur);font-size:22px;font-weight:700}
+
+/* Countdown */
+.countdown{display:flex;align-items:center;gap:10px;direction:ltr}
+.cd{
+  background:rgba(0,0,0,.35);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.15);border-radius:var(--r-sm);
+  padding:12px 16px;text-align:center;min-width:60px;
+}
+.cd-n{font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);display:block;line-height:1}
+.cd-l{font-family:var(--font-ur);font-size:10px;color:rgba(255,255,255,.55);margin-top:4px;display:block}
+.cd-sep{color:var(--gold);font-size:28px;font-weight:700}
+
+/* ═══════════════════════════════════════════
+   SECTION GENERIC
+═══════════════════════════════════════════ */
+.section{padding:60px 0}
+.section-alt{background:var(--g50)}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  margin-bottom:40px;direction:rtl;
+}
+.sec-title-ur{font-family:var(--font-ur);font-size:30px;font-weight:700;color:var(--g800);line-height:1.4}
+.sec-title-en{font-family:var(--font-display);font-size:14px;font-style:italic;color:var(--text-3);margin-top:2px}
+.sec-bar{width:52px;height:4px;background:var(--gold);border-radius:2px;margin-top:10px;border-radius:20px}
+.see-all{
+  display:flex;align-items:center;gap:6px;
+  color:var(--g600);font-size:13.5px;font-weight:700;
+  transition:var(--t);
+}
+.see-all:hover{color:var(--g800);gap:10px}
+
+/* ═══════════════════════════════════════════
+   PRODUCT CARD
+═══════════════════════════════════════════ */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.pcard{
+  background:var(--white);border-radius:var(--r);
+  border:1px solid var(--border);overflow:hidden;
+  transition:var(--t);position:relative;
+  display:flex;flex-direction:column;
+}
+.pcard:hover{transform:translateY(-8px);box-shadow:var(--sh-lg);border-color:var(--g200)}
+
+.pcard-img{
+  aspect-ratio:1;
+  background:linear-gradient(135deg,var(--g50) 0%,var(--gold-pale) 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-size:88px;position:relative;overflow:hidden;
+  flex-shrink:0;
+}
+.pcard-img::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 70% 30%,rgba(245,158,11,.07) 0%,transparent 60%);
+}
+.pcard-emoji{position:relative;z-index:1;transition:transform .4s var(--ease)}
+.pcard:hover .pcard-emoji{transform:scale(1.12) rotate(-4deg)}
+
+.badge-off{
+  position:absolute;top:12px;right:12px;
+  background:var(--red);color:var(--white);
+  padding:4px 11px;border-radius:20px;
+  font-size:11px;font-weight:800;z-index:5;
+  font-family:var(--font-en);
+}
+.badge-stock{
+  position:absolute;top:12px;left:12px;
+  background:var(--gold);color:var(--g900);
+  padding:4px 10px;border-radius:20px;
+  font-size:10px;font-weight:700;z-index:5;
+  font-family:var(--font-ur);
+}
+.badge-new{background:var(--g600);color:var(--white)}
+.wish{
+  position:absolute;bottom:12px;left:12px;
+  width:36px;height:36px;background:var(--white);
+  border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;
+  font-size:18px;box-shadow:var(--sh);z-index:5;transition:var(--t);
+}
+.wish:hover{transform:scale(1.2)}
+.wish.on{color:var(--red)}
+
+.pcard-body{padding:16px;direction:rtl;flex:1;display:flex;flex-direction:column}
+.pcard-name-ur{font-family:var(--font-ur);font-size:15px;font-weight:700;color:var(--text);line-height:1.6;margin-bottom:3px}
+.pcard-name-en{font-size:11px;color:var(--text-3);margin-bottom:9px;font-style:italic}
+.pcard-vars{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.var-chip{
+  padding:3px 11px;border-radius:20px;
+  font-size:10px;font-weight:600;
+  background:var(--g100);color:var(--g700);
+  border:1px solid var(--g200);
+}
+.pcard-stars{
+  display:flex;align-items:center;gap:5px;
+  margin-bottom:12px;direction:ltr;justify-content:flex-end;
+}
+.stars{color:var(--gold);font-size:13px;letter-spacing:1px}
+.stars-n{font-size:11px;color:var(--text-3)}
+.pcard-pricing{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:auto;
+}
+.pricing-block{direction:ltr}
+.price-now{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--g600)}
+.price-cur{font-size:13px;color:var(--text-3)}
+.price-old{font-size:12px;color:var(--text-4);text-decoration:line-through;margin-top:1px}
+.price-free{font-size:11px;color:var(--text-3);margin-top:1px}
+.atc{
+  background:var(--g600);color:var(--white);
+  border:none;padding:9px 16px;border-radius:var(--r-sm);
+  font-size:12px;font-weight:700;transition:var(--t);
+  font-family:var(--font-ur);
+}
+.atc:hover{background:var(--g800)}
+
+/* ═══════════════════════════════════════════
+   WHY US
+═══════════════════════════════════════════ */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why-card{
+  background:var(--white);border-radius:var(--r);padding:36px 28px;
+  border:1px solid var(--border);transition:var(--t);text-align:center;direction:rtl;
+}
+.why-card:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:var(--g200)}
+.why-ico{
+  width:68px;height:68px;
+  background:var(--g50);border-radius:var(--r);
+  display:flex;align-items:center;justify-content:center;
+  font-size:32px;margin:0 auto 20px;
+  border:1px solid var(--g100);
+}
+.why-ttl{font-family:var(--font-ur);font-size:18px;font-weight:700;color:var(--g800);margin-bottom:10px}
+.why-txt{font-family:var(--font-ur);font-size:13.5px;color:var(--text-3);line-height:2}
+
+/* ═══════════════════════════════════════════
+   REVIEWS
+═══════════════════════════════════════════ */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev-card{
+  background:var(--white);border-radius:var(--r);padding:26px;
+  border:1px solid var(--border);direction:rtl;transition:var(--t);
+}
+.rev-card:hover{box-shadow:var(--sh);transform:translateY(-3px)}
+.rev-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.rev-av{
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,var(--g400),var(--g700));
+  color:var(--white);display:flex;align-items:center;justify-content:center;
+  font-size:21px;font-weight:800;flex-shrink:0;
+  font-family:var(--font-en);
+}
+.rev-name{font-family:var(--font-ur);font-size:14px;font-weight:700}
+.rev-city{font-size:11px;color:var(--text-3);margin-top:2px}
+.rev-stars{color:var(--gold);font-size:15px;margin-bottom:11px}
+.rev-txt{font-family:var(--font-ur);font-size:14px;color:var(--text-2);line-height:2}
+.rev-prod{font-size:11px;color:var(--g600);margin-top:10px;font-weight:700}
+.verified{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--g500);margin-top:6px}
+
+/* ═══════════════════════════════════════════
+   PRODUCT MODAL (Detail Page)
+═══════════════════════════════════════════ */
+.overlay{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.65);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.overlay.on{opacity:1;pointer-events:all}
+.modal{
+  background:var(--white);border-radius:var(--r-lg);
+  max-width:960px;width:100%;max-height:92vh;overflow-y:auto;
+  position:relative;
+  transform:translateY(32px) scale(.97);
+  transition:transform .35s var(--ease);
+  box-shadow:0 32px 96px rgba(0,0,0,.3);
+}
+.overlay.on .modal{transform:translateY(0) scale(1)}
+.modal-x{
+  position:sticky;top:0;left:0;z-index:10;
+  display:flex;justify-content:flex-start;
+  padding:16px 16px 0;background:transparent;pointer-events:none;
+}
+.modal-x-btn{
+  width:38px;height:38px;background:var(--white);
+  border-radius:50%;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;box-shadow:var(--sh-sm);pointer-events:all;
+  transition:var(--t);
+}
+.modal-x-btn:hover{background:var(--bg)}
+.modal-body{display:grid;grid-template-columns:1fr 1fr;margin-top:-54px}
+
+.modal-img-col{
+  background:linear-gradient(135deg,var(--g50),var(--gold-pale));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:60px 40px 40px;border-radius:var(--r-lg) 0 0 var(--r-lg);
+  min-height:420px;position:relative;overflow:hidden;
+}
+.modal-img-col::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 60% 40%,rgba(245,158,11,.1) 0%,transparent 60%);
+  pointer-events:none;
+}
+.modal-emoji{font-size:150px;filter:drop-shadow(0 16px 36px rgba(0,0,0,.15));animation:float 3s ease-in-out infinite;position:relative;z-index:1}
+.modal-certs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.cert{
+  background:var(--white);border:1px solid var(--g200);
+  color:var(--g700);padding:5px 14px;border-radius:20px;
+  font-size:11px;font-weight:700;box-shadow:var(--sh-sm);
+}
+
+.modal-info{padding:48px 40px 40px;direction:rtl;overflow-y:auto}
+.modal-name-ur{font-family:var(--font-ur);font-size:28px;font-weight:700;color:var(--g800);margin-bottom:5px;line-height:1.5}
+.modal-name-en{font-family:var(--font-display);font-size:15px;font-style:italic;color:var(--text-3);margin-bottom:16px}
+.modal-star-row{display:flex;align-items:center;gap:8px;margin-bottom:20px;direction:ltr;justify-content:flex-end}
+.modal-price-block{margin-bottom:22px;direction:ltr}
+.modal-price{font-family:var(--font-display);font-size:42px;font-weight:700;color:var(--g600);line-height:1}
+.modal-price-old{font-size:18px;color:var(--text-4);text-decoration:line-through;margin-right:10px}
+.modal-save{font-size:13px;color:var(--red);font-weight:700;margin-top:5px}
+.modal-free{font-size:11px;color:var(--text-3);margin-top:2px}
+
+.vl{margin-bottom:22px}
+.vl-lbl{font-family:var(--font-ur);font-size:13px;font-weight:700;color:var(--text-2);margin-bottom:10px;display:block}
+.vl-btns{display:flex;gap:10px;flex-wrap:wrap}
+.vl-btn{
+  padding:9px 22px;border-radius:var(--r-sm);
+  border:2px solid var(--border);background:var(--white);
+  font-size:13px;font-weight:600;transition:var(--t);
+}
+.vl-btn:hover,.vl-btn.on{border-color:var(--g500);background:var(--g50);color:var(--g700)}
+
+.qty-row{margin-bottom:22px;direction:rtl}
+.qty-lbl{font-family:var(--font-ur);font-size:13px;font-weight:700;color:var(--text-2);margin-bottom:10px;display:block}
+.qty-ctl{
+  display:flex;align-items:center;
+  border:1.5px solid var(--border);border-radius:var(--r-sm);
+  overflow:hidden;width:fit-content;
+}
+.qty-b{
+  width:42px;height:42px;border:none;background:var(--bg);
+  font-size:22px;font-weight:300;display:flex;align-items:center;justify-content:center;
+  transition:var(--t);
+}
+.qty-b:hover{background:var(--g100);color:var(--g700)}
+.qty-inp{
+  width:60px;text-align:center;border:none;
+  border-left:1.5px solid var(--border);border-right:1.5px solid var(--border);
+  font-size:18px;font-weight:700;padding:9px 0;background:var(--white);
+}
+.modal-btns{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.modal-btns .btn{padding:14px 20px;font-size:15px;font-family:var(--font-ur)}
+.modal-btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* Tabs */
+.tabs{margin-top:24px}
+.tab-head{display:flex;border-bottom:1.5px solid var(--border);margin-bottom:18px}
+.tab-btn{
+  padding:11px 20px;border:none;background:transparent;
+  font-size:13px;font-weight:600;color:var(--text-3);
+  border-bottom:3px solid transparent;margin-bottom:-1.5px;
+  transition:var(--t);font-family:var(--font-ur);
+}
+.tab-btn:hover,.tab-btn.on{color:var(--g600);border-bottom-color:var(--g500)}
+.tab-pane{display:none;direction:rtl}
+.tab-pane.on{display:block;animation:tab-in .25s ease}
+@keyframes tab-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.tab-pane p{font-family:var(--font-ur);font-size:14px;color:var(--text-2);line-height:2.1;margin-bottom:10px}
+.ben-list{}
+.ben-item{
+  font-family:var(--font-ur);font-size:14px;color:var(--text-2);
+  padding:9px 0;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:10px;
+}
+.ben-item:last-child{border-bottom:none}
+.ben-item::before{content:'✅';font-size:14px;flex-shrink:0}
+
+/* ═══════════════════════════════════════════
+   CART SIDEBAR
+═══════════════════════════════════════════ */
+.cart-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  backdrop-filter:blur(4px);z-index:1100;display:none;
+}
+.cart-overlay.on{display:block}
+.cart-side{
+  position:fixed;top:0;left:-440px;width:440px;height:100%;
+  background:var(--white);z-index:1200;
+  box-shadow:8px 0 48px rgba(0,0,0,.2);
+  transition:left .4s var(--ease);display:flex;flex-direction:column;
+}
+.cart-side.on{left:0}
+.cart-hdr{
+  padding:20px 24px;display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(135deg,var(--g800),var(--g700));
+  color:var(--white);direction:rtl;flex-shrink:0;
+}
+.cart-hdr-title{font-family:var(--font-ur);font-size:20px;font-weight:700;display:flex;align-items:center;gap:10px}
+.cart-hdr-count{
+  background:var(--gold);color:var(--g900);
+  width:28px;height:28px;border-radius:50%;
+  font-size:12px;font-weight:800;font-family:var(--font-en);
+  display:flex;align-items:center;justify-content:center;
+}
+.cart-x{
+  background:rgba(255,255,255,.15);border:none;color:var(--white);
+  width:36px;height:36px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:20px;
+  transition:var(--t);
+}
+.cart-x:hover{background:rgba(255,255,255,.25)}
+
+.cart-scroll{flex:1;overflow-y:auto;padding:20px 24px;direction:rtl}
+.cart-empty{text-align:center;padding:64px 20px;color:var(--text-3)}
+.cart-empty-icon{font-size:72px;margin-bottom:16px}
+.cart-empty-t{font-family:var(--font-ur);font-size:17px;color:var(--text-2);margin-bottom:5px}
+
+.citem{
+  display:flex;gap:14px;padding:16px 0;
+  border-bottom:1px solid var(--border);align-items:flex-start;direction:rtl;
+}
+.citem-img{
+  width:70px;height:70px;background:var(--g50);border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;font-size:38px;
+  flex-shrink:0;border:1px solid var(--g100);
+}
+.citem-info{flex:1}
+.citem-name{font-family:var(--font-ur);font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px}
+.citem-var{font-size:11px;color:var(--text-3);margin-bottom:10px}
+.citem-row{display:flex;align-items:center;justify-content:space-between;direction:ltr}
+.citem-price{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--g600)}
+.mini-qty{display:flex;align-items:center;gap:0;border:1px solid var(--border);border-radius:var(--r-xs);overflow:hidden}
+.mq-btn{width:30px;height:30px;border:none;background:var(--bg);font-size:18px;display:flex;align-items:center;justify-content:center;transition:var(--t)}
+.mq-btn:hover{background:var(--g100)}
+.mq-n{padding:0 11px;font-size:14px;font-weight:700;min-width:34px;text-align:center}
+.citem-rm{background:none;border:none;font-size:17px;color:var(--text-4);transition:var(--t);margin-right:6px}
+.citem-rm:hover{color:var(--red)}
+
+.cart-ftr{padding:20px 24px;border-top:1px solid var(--border);background:var(--bg);flex-shrink:0}
+.cart-sum-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;direction:rtl}
+.cart-sum-lbl{font-family:var(--font-ur);font-size:13px;color:var(--text-3)}
+.cart-sum-val{font-size:14px;font-weight:700;direction:ltr}
+.cart-total-row{display:flex;justify-content:space-between;align-items:center;direction:rtl;padding-top:12px;border-top:2px solid var(--border);margin-bottom:16px}
+.cart-total-lbl{font-family:var(--font-ur);font-size:17px;font-weight:700}
+.cart-total-val{font-family:var(--font-display);font-size:27px;font-weight:700;color:var(--g600);direction:ltr}
+.cart-co{
+  width:100%;background:linear-gradient(135deg,var(--g600),var(--g800));
+  color:var(--white);border:none;padding:16px;border-radius:var(--r);
+  font-size:17px;font-weight:800;font-family:var(--font-ur);
+  transition:var(--t);margin-bottom:10px;
+}
+.cart-co:hover{background:linear-gradient(135deg,var(--g800),var(--g900))}
+.cart-wa{
+  width:100%;background:#25d366;color:var(--white);border:none;
+  padding:14px;border-radius:var(--r);font-size:14px;font-weight:700;
+  font-family:var(--font-ur);display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:var(--t);
+}
+.cart-wa:hover{background:#128c4e}
+
+/* ═══════════════════════════════════════════
+   CHECKOUT PAGE
+═══════════════════════════════════════════ */
+.co-page{display:none;background:var(--bg);min-height:100vh;padding:40px 0}
+.co-page.on{display:block}
+.co-grid{
+  display:grid;grid-template-columns:1fr 460px;gap:28px;
+  max-width:1140px;margin:0 auto;padding:0 24px;
+}
+.co-card{background:var(--white);border-radius:var(--r-lg);padding:40px;box-shadow:var(--sh-sm)}
+.co-title{font-family:var(--font-ur);font-size:23px;font-weight:800;color:var(--g800);margin-bottom:30px;display:flex;align-items:center;gap:10px}
+.fg{margin-bottom:20px;direction:rtl}
+.fl{font-family:var(--font-ur);font-size:14px;font-weight:700;color:var(--text-2);margin-bottom:8px;display:block}
+.fl span{color:var(--red)}
+.fi,.fs,.fta{
+  width:100%;padding:13px 16px;
+  border:1.5px solid var(--border);border-radius:var(--r-sm);
+  font-size:14px;font-family:var(--font-en);
+  transition:var(--t);background:var(--white);direction:rtl;
+}
+.fi:focus,.fs:focus,.fta:focus{border-color:var(--g400);box-shadow:0 0 0 3px rgba(16,185,129,.12)}
+.fta{resize:vertical;min-height:90px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pay-opt{
+  border:2px solid var(--border);border-radius:var(--r);
+  padding:17px 20px;display:flex;align-items:center;gap:14px;
+  cursor:pointer;transition:var(--t);direction:rtl;
+}
+.pay-opt.on{border-color:var(--g500);background:var(--g50)}
+.pay-ico{font-size:30px;flex-shrink:0}
+.pay-name{font-family:var(--font-ur);font-size:15px;font-weight:700}
+.pay-sub{font-size:11px;color:var(--text-3);margin-top:2px}
+
+.co-items{margin-bottom:20px}
+.co-item{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 0;border-bottom:1px solid var(--border);direction:rtl;
+}
+.co-item:last-child{border:none}
+.co-img{
+  width:54px;height:54px;background:var(--g50);border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;font-size:30px;flex-shrink:0;
+}
+.co-item-name{font-family:var(--font-ur);font-size:13px;font-weight:700;flex:1}
+.co-item-qty{font-size:12px;color:var(--text-3)}
+.co-item-price{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--g600);direction:ltr}
+.co-rows{margin-top:16px}
+.co-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;direction:rtl}
+.co-row-l{font-family:var(--font-ur);font-size:13px;color:var(--text-3)}
+.co-row-v{font-size:14px;font-weight:700;direction:ltr}
+.co-total{border-top:2px solid var(--border);padding-top:15px;margin-top:6px}
+.co-total-l{font-family:var(--font-ur);font-size:17px;font-weight:800;color:var(--text)}
+.co-total-v{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--g600);direction:ltr}
+.trust-mini{
+  display:flex;flex-wrap:wrap;gap:14px;margin-top:20px;
+  padding:16px;background:var(--g50);border-radius:var(--r-sm);border:1px solid var(--g100);
+}
+.tmi{display:flex;align-items:center;gap:6px;font-family:var(--font-ur);font-size:12px;color:var(--g700)}
+.place-btn{
+  width:100%;
+  background:linear-gradient(135deg,var(--g600) 0%,var(--g800) 100%);
+  color:var(--white);border:none;padding:18px;
+  border-radius:var(--r);font-size:18px;font-weight:800;
+  font-family:var(--font-ur);transition:var(--t);
+  box-shadow:var(--sh-g);margin-top:22px;
+}
+.place-btn:hover{background:linear-gradient(135deg,var(--g800),var(--g900));transform:translateY(-2px);box-shadow:0 16px 48px rgba(6,95,70,.4)}
+
+/* ═══════════════════════════════════════════
+   SUCCESS PAGE
+═══════════════════════════════════════════ */
+.suc-page{
+  display:none;min-height:100vh;background:var(--g50);
+  align-items:center;justify-content:center;padding:40px 20px;
+}
+.suc-page.on{display:flex}
+.suc-card{
+  background:var(--white);border-radius:var(--r-xl);
+  padding:64px 52px;text-align:center;max-width:580px;width:100%;
+  box-shadow:var(--sh-lg);direction:rtl;
+}
+.suc-anim{font-size:88px;margin-bottom:24px;animation:suc-bounce .7s var(--ease)}
+@keyframes suc-bounce{0%{transform:scale(0) rotate(-10deg)}60%{transform:scale(1.2) rotate(4deg)}100%{transform:scale(1) rotate(0)}}
+.suc-title{font-family:var(--font-ur);font-size:34px;font-weight:800;color:var(--g700);margin-bottom:12px}
+.suc-sub{font-family:var(--font-ur);font-size:16px;color:var(--text-2);line-height:2;margin-bottom:28px}
+.suc-oid{
+  background:var(--g50);border:1px solid var(--g200);border-radius:var(--r-sm);
+  padding:13px 24px;font-size:14px;color:var(--g700);font-weight:700;
+  margin-bottom:28px;display:inline-block;direction:ltr;
+  font-family:var(--font-en);letter-spacing:.5px;
+}
+.suc-btns{display:flex;flex-direction:column;gap:12px}
+
+/* ═══════════════════════════════════════════
+   ADMIN PANEL
+═══════════════════════════════════════════ */
+.admin-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.7);
+  backdrop-filter:blur(8px);z-index:2000;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.admin-overlay.on{display:flex}
+.admin-panel{
+  background:var(--white);border-radius:var(--r-lg);
+  max-width:900px;width:100%;max-height:90vh;overflow-y:auto;
+  box-shadow:0 40px 120px rgba(0,0,0,.4);
+}
+.admin-hdr{
+  padding:24px 32px;background:linear-gradient(135deg,var(--g800),var(--g900));
+  color:var(--white);border-radius:var(--r-lg) var(--r-lg) 0 0;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:10;
+}
+.admin-title{font-family:var(--font-display);font-size:24px;font-weight:700;display:flex;align-items:center;gap:10px}
+.admin-body{padding:32px}
+.admin-sec{margin-bottom:32px}
+.admin-sec-title{font-family:var(--font-en);font-size:15px;font-weight:800;color:var(--g700);margin-bottom:16px;text-transform:uppercase;letter-spacing:.8px;border-bottom:2px solid var(--g100);padding-bottom:8px}
+.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.admin-field{display:flex;flex-direction:column;gap:6px}
+.admin-label{font-size:12px;font-weight:700;color:var(--text-2);letter-spacing:.4px;text-transform:uppercase}
+.admin-input{
+  padding:11px 14px;border:1.5px solid var(--border);border-radius:var(--r-sm);
+  font-size:14px;font-weight:600;color:var(--text);transition:var(--t);
+}
+.admin-input:focus{border-color:var(--g400);box-shadow:0 0 0 3px rgba(16,185,129,.1)}
+.admin-product-card{
+  background:var(--bg);border-radius:var(--r);padding:20px;
+  border:1px solid var(--border);margin-bottom:16px;
+}
+.admin-product-title{font-size:15px;font-weight:800;color:var(--g800);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.admin-badge-row{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+.admin-toggle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--text-2);cursor:pointer}
+.admin-toggle input[type=checkbox]{width:16px;height:16px;accent-color:var(--g600);cursor:pointer}
+.save-btn{
+  background:linear-gradient(135deg,var(--g600),var(--g800));color:var(--white);
+  border:none;padding:14px 36px;border-radius:var(--r-sm);font-size:15px;font-weight:700;
+  transition:var(--t);box-shadow:var(--sh-g);display:inline-flex;align-items:center;gap:8px;
+}
+.save-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(6,95,70,.4)}
+.admin-email-note{
+  background:var(--gold-pale);border:1px solid var(--gold-l);border-radius:var(--r-sm);
+  padding:16px;font-size:13px;color:var(--text-2);line-height:1.7;margin-top:16px;
+}
+.admin-email-note strong{color:var(--g700)}
+
+/* ═══════════════════════════════════════════
+   NEWSLETTER
+═══════════════════════════════════════════ */
+.nl{
+  background:linear-gradient(135deg,var(--g800),var(--g700));
+  padding:70px 0;text-align:center;position:relative;overflow:hidden;
+}
+.nl::before{content:'🍯';position:absolute;left:3%;top:50%;transform:translateY(-50%);font-size:150px;opacity:.06;pointer-events:none}
+.nl::after{content:'🌿';position:absolute;right:3%;top:50%;transform:translateY(-50%);font-size:150px;opacity:.06;pointer-events:none}
+.nl-icon{font-size:56px;margin-bottom:18px}
+.nl-title{font-family:var(--font-ur);font-size:34px;font-weight:800;color:var(--white);margin-bottom:10px}
+.nl-sub{font-family:var(--font-ur);font-size:16px;color:rgba(255,255,255,.7);margin-bottom:34px}
+.nl-form{display:flex;max-width:500px;margin:0 auto;border-radius:var(--r);overflow:hidden;box-shadow:0 8px 36px rgba(0,0,0,.25)}
+.nl-inp{flex:1;border:none;padding:16px 22px;font-size:14px;outline:none;direction:ltr}
+.nl-btn{background:var(--gold);color:var(--g900);border:none;padding:16px 28px;font-size:14px;font-weight:800;transition:var(--t);font-family:var(--font-ur);white-space:nowrap}
+.nl-btn:hover{background:var(--gold-d);color:var(--white)}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer{background:var(--g900);color:rgba(255,255,255,.8);padding:70px 0 0}
+.foot-grid{
+  display:grid;grid-template-columns:2.2fr 1fr 1fr 1.4fr;gap:52px;
+  max-width:1320px;margin:0 auto;padding:0 24px;
+  margin-bottom:52px;direction:rtl;
+}
+.foot-logo-name{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--white);margin-bottom:5px}
+.foot-logo-name span{color:var(--gold)}
+.foot-tag{font-family:var(--font-ur);font-size:13px;color:var(--gold);margin-bottom:16px}
+.foot-about{font-family:var(--font-ur);font-size:13px;color:rgba(255,255,255,.5);line-height:2;margin-bottom:22px}
+.socials{display:flex;gap:10px}
+.soc{
+  width:40px;height:40px;background:rgba(255,255,255,.08);
+  border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;
+  font-size:19px;transition:var(--t);border:1px solid rgba(255,255,255,.08);
+}
+.soc:hover{background:var(--g600);border-color:var(--g500)}
+.foot-col h4{font-family:var(--font-ur);font-size:16px;color:var(--white);font-weight:800;margin-bottom:20px}
+.foot-col ul li{margin-bottom:12px}
+.foot-col ul li a{font-family:var(--font-ur);color:rgba(255,255,255,.5);font-size:13px;transition:var(--t)}
+.foot-col ul li a:hover{color:var(--gold);padding-right:4px}
+.foot-contact-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;direction:rtl}
+.fci-ico{font-size:18px;flex-shrink:0;margin-top:2px}
+.fci-txt{font-family:var(--font-ur);font-size:13px;color:rgba(255,255,255,.5);line-height:1.8}
+.fci-txt a{color:var(--gold)}
+.fci-txt a:hover{color:var(--gold-d)}
+.foot-wa{
+  background:#25d366;color:var(--white);
+  padding:13px 22px;border-radius:var(--r-sm);
+  font-size:13px;font-weight:700;font-family:var(--font-ur);
+  display:inline-flex;align-items:center;gap:8px;
+  transition:var(--t);margin-top:14px;
+}
+.foot-wa:hover{background:#128c4e;transform:translateY(-2px)}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:22px 24px;max-width:1320px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  direction:rtl;flex-wrap:wrap;gap:12px;
+}
+.foot-copy{font-family:var(--font-ur);font-size:12px;color:rgba(255,255,255,.3)}
+.pay-methods{display:flex;gap:8px}
+.pay-m{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);
+  border-radius:4px;padding:5px 13px;font-size:10px;color:rgba(255,255,255,.45);font-weight:700;letter-spacing:.5px;
+}
+
+/* ═══════════════════════════════════════════
+   FLOATING ELEMENTS
+═══════════════════════════════════════════ */
+.sticky-wa{
+  position:fixed;bottom:28px;left:28px;
+  width:60px;height:60px;border-radius:50%;
+  background:#25d366;color:var(--white);border:none;
+  font-size:30px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 24px rgba(37,211,102,.5);z-index:700;
+  animation:wa-pulse 3s ease-in-out infinite;transition:var(--t);
+}
+@keyframes wa-pulse{0%,100%{box-shadow:0 4px 24px rgba(37,211,102,.5)}50%{box-shadow:0 4px 36px rgba(37,211,102,.8);transform:scale(1.06)}}
+.sticky-wa:hover{background:#128c4e;transform:scale(1.12)}
+.scroll-top-btn{
+  position:fixed;bottom:100px;left:28px;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--g600);color:var(--white);border:none;
+  font-size:21px;display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--sh);z-index:700;opacity:0;pointer-events:none;transition:var(--t);
+}
+.scroll-top-btn.on{opacity:1;pointer-events:all}
+.scroll-top-btn:hover{background:var(--g800);transform:translateY(-3px)}
+
+/* Toast */
+.toast-wrap{position:fixed;bottom:28px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{
+  background:var(--g700);color:var(--white);
+  padding:15px 22px;border-radius:var(--r);
+  font-family:var(--font-ur);font-size:14px;
+  box-shadow:0 8px 32px rgba(6,95,70,.4);
+  display:flex;align-items:center;gap:10px;direction:rtl;
+  transform:translateX(130%);transition:transform .4s var(--ease);
+  pointer-events:auto;max-width:320px;
+}
+.toast.on{transform:translateX(0)}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media(max-width:1100px){
+  .products-grid{grid-template-columns:repeat(3,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .co-grid{grid-template-columns:1fr}
+  .admin-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .header-inner{grid-template-columns:auto auto;gap:12px}
+  .search-wrap{display:none}
+  .hero-content{grid-template-columns:1fr;gap:28px;padding:0 24px}
+  .hero-visual{display:none}
+  .hero-h1{font-size:32px}
+  .hero-sub-en{font-size:16px}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{width:100%}
+  .hero-stats{display:none}
+  .trust-grid{grid-template-columns:1fr 1fr;gap:0}
+  .trust-item{border-right:none;padding:14px;border-bottom:1px solid var(--border)}
+  .trust-item:nth-child(odd){border-right:1px solid var(--border)}
+  .trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:none}
+  .products-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .why-grid,.rev-grid{grid-template-columns:1fr}
+  .modal-body{grid-template-columns:1fr}
+  .modal-img-col{min-height:220px;border-radius:var(--r-lg) var(--r-lg) 0 0}
+  .cart-side{width:100%;left:-100%}
+  .foot-grid{grid-template-columns:1fr}
+  .co-grid{grid-template-columns:1fr}
+  .co-card{padding:24px 20px}
+  .f2{grid-template-columns:1fr}
+  .section{padding:44px 0}
+  .flash-head{flex-direction:column;gap:16px;align-items:flex-start}
+  .suc-card{padding:44px 28px}
+  .admin-grid{grid-template-columns:1fr}
+  .admin-badge-row{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+  .products-grid{gap:10px}
+  .pcard-img{font-size:68px}
+  .hero-h1{font-size:26px}
+  .hero-emoji{font-size:140px}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING BUTTONS -->
+<button class="sticky-wa" onclick="wa('السلام علیکم! ZahirOpenStore سے آرڈر کرنا ہے')" title="WhatsApp">💬</button>
+<button class="scroll-top-btn" id="scrollBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<!-- ══════════════════════════════════
+     MAIN SITE
+══════════════════════════════════ -->
+<div id="mainSite">
+
+<!-- ANNOUNCE BAR -->
+<div class="announce">
+  <div class="announce-track" id="annTrack">
+    <span class="announce-item">🍯 <strong>100% خالص شہد</strong> <span class="dot"></span></span>
+    <span class="announce-item">⚡ <strong>آج کا آفر: مفت ڈیلیوری</strong> <span class="dot"></span></span>
+    <span class="announce-item">🌿 لیب ٹیسٹڈ اور سرٹیفائیڈ <span class="dot"></span></span>
+    <span class="announce-item">📞 <strong id="ann-phone">0300-0000000</strong> <span class="dot"></span></span>
+    <span class="announce-item">🚚 پاکستان بھر ڈیلیوری <span class="dot"></span></span>
+    <span class="announce-item">💵 Cash on Delivery دستیاب <span class="dot"></span></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="announce-item">🍯 <strong>100% خالص شہد</strong> <span class="dot"></span></span>
+    <span class="announce-item">⚡ <strong>آج کا آفر: مفت ڈیلیوری</strong> <span class="dot"></span></span>
+    <span class="announce-item">🌿 لیب ٹیسٹڈ اور سرٹیفائیڈ <span class="dot"></span></span>
+    <span class="announce-item">📞 <strong id="ann-phone2">0300-0000000</strong> <span class="dot"></span></span>
+    <span class="announce-item">🚚 پاکستان بھر ڈیلیوری <span class="dot"></span></span>
+    <span class="announce-item">💵 Cash on Delivery دستیاب <span class="dot"></span></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">🍯</div>
+      <div class="logo-text">
+        <div class="logo-name">Zahir<span>Open</span>Store</div>
+        <div class="logo-tag">خالص دیسی شہد اور آرگینک پروڈکٹس</div>
+      </div>
+    </a>
+    <div class="search-wrap">
+      <button class="search-btn">🔍</button>
+      <input class="search-input" type="text" placeholder="شہد، گھی، پنجیری تلاش کریں...">
+    </div>
+    <div class="header-actions">
+      <button class="hdr-action" onclick="openAdmin()">
+        <span class="ico">⚙️</span>
+        <span>ایڈمن</span>
+      </button>
+      <button class="hdr-action" onclick="openCart()">
+        <span class="ico">🛒</span>
+        <span>کارٹ</span>
+        <span class="cart-num" id="cartBadge">0</span>
+      </button>
+      <button class="wa-btn-header" onclick="wa('السلام علیکم ZahirOpenStore! آرڈر کرنا ہے')">
+        <span>💬</span><span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-a active">🏠 ہوم</a>
+    <a href="#products" class="nav-a">🍯 شہد</a>
+    <a href="#products" class="nav-a">🧈 دیسی گھی</a>
+    <a href="#products" class="nav-a">🌰 ڈرائی فروٹ</a>
+    <a href="#products" class="nav-a">🌿 آرگینک</a>
+    <a href="#reviews" class="nav-a">⭐ ریویوز</a>
+    <a href="#flash" class="nav-a hot">🔥 فلیش سیل</a>
+    <a href="#footer" class="nav-a">📞 رابطہ</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════
+     HERO SLIDER
+══════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid-overlay"></div>
+  <div style="width:100%;position:relative">
+    <div class="hero-slides" id="hSlides">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div>
+            <div class="hero-eyebrow">⚡ محدود آفر</div>
+            <div class="hero-h1">خالص دیسی شہد<br>کسان کے مکھی خانے سے<br>سیدھا آپ کے گھر</div>
+            <div class="hero-sub-en">Pure Wild Honey — Direct from Mountain Hives</div>
+            <div class="hero-desc">بغیر کسی ملاوٹ کے، 100% قدرتی، لیب ٹیسٹڈ شہد۔<br>آپ کی صحت ہماری اولین ترجیح ہے۔</div>
+            <div class="hero-btns">
+              <button class="btn btn-gold btn-lg" onclick="scrollToProducts()">🛒 ابھی خریدیں</button>
+              <button class="btn btn-outline btn-lg" style="color:white;border-color:rgba(255,255,255,.5)" onclick="openModal('honey-wild')">تفصیل دیکھیں</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-honeycomb"></div>
+            <div class="hero-emoji">🍯</div>
+            <div class="hero-pills">
+              <div class="hero-pill"><span class="hero-pill-icon">✅</span> 100% Pure Tested</div>
+              <div class="hero-pill"><span class="hero-pill-icon">🚚</span> Fast Delivery Pakistan</div>
+              <div class="hero-pill"><span class="hero-pill-icon">💰</span> Cash on Delivery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div>
+            <div class="hero-eyebrow">🌰 بیسٹ سیلر</div>
+            <div class="hero-h1">ڈرائی فروٹ شہد<br>35+ میوہ جات کا<br>انمول امتزاج</div>
+            <div class="hero-sub-en">Dry Fruit Honey — 35+ Premium Nuts Blend</div>
+            <div class="hero-desc">کاجو، بادام، پستہ، اخروٹ اور خالص شہد کا بہترین ملاپ<br>گفٹ دینے کے لیے بھی مثالی پیکنگ۔</div>
+            <div class="hero-btns">
+              <button class="btn btn-gold btn-lg" onclick="addById('dry-fruit',1)">🛒 ابھی خریدیں</button>
+              <button class="btn btn-outline btn-lg" style="color:white;border-color:rgba(255,255,255,.5)" onclick="openModal('dry-fruit')">تفصیل دیکھیں</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-honeycomb"></div>
+            <div class="hero-emoji">🌰</div>
+            <div class="hero-pills">
+              <div class="hero-pill"><span class="hero-pill-icon">💪</span> Energy Booster</div>
+              <div class="hero-pill"><span class="hero-pill-icon">🎁</span> Gift Ready</div>
+              <div class="hero-pill"><span class="hero-pill-icon">🌟</span> Premium Quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div>
+            <div class="hero-eyebrow">🧈 آرگینک</div>
+            <div class="hero-h1">خالص دیسی گھی<br>گائے کے دودھ سے<br>روایتی طریقے پر</div>
+            <div class="hero-sub-en">Pure Desi Ghee — Traditional Village Made</div>
+            <div class="hero-desc">بھرپور ذائقہ اور صحت کے فوائد سے بھرپور<br>ہر کھانے کو لذیذ اور مغذی بنائے۔</div>
+            <div class="hero-btns">
+              <button class="btn btn-gold btn-lg" onclick="addById('ghee',1)">🛒 ابھی خریدیں</button>
+              <button class="btn btn-outline btn-lg" style="color:white;border-color:rgba(255,255,255,.5)" onclick="openModal('ghee')">تفصیل دیکھیں</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-honeycomb"></div>
+            <div class="hero-emoji">🧈</div>
+            <div class="hero-pills">
+              <div class="hero-pill"><span class="hero-pill-icon">🐄</span> Cow Milk Ghee</div>
+              <div class="hero-pill"><span class="hero-pill-icon">❄️</span> No Preservatives</div>
+              <div class="hero-pill"><span class="hero-pill-icon">🌿</span> 100% Organic</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-num">10M+</div><div class="h-stat-lbl">خوش گاہک</div></div>
+      <div class="h-stat"><div class="h-stat-num">50K+</div><div class="h-stat-lbl">آرڈرز</div></div>
+      <div class="h-stat"><div class="h-stat-num">100+</div><div class="h-stat-lbl">شہر</div></div>
+    </div>
+    <div class="hero-dots" id="hDots">
+      <button class="h-dot on" onclick="heroGo(0)"></button>
+      <button class="h-dot" onclick="heroGo(1)"></button>
+      <button class="h-dot" onclick="heroGo(2)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-grid">
+    <div class="trust-item"><div class="trust-ico">🔬</div><div><div class="trust-ttl">لیب ٹیسٹڈ</div><div class="trust-sub">Lab Certified Pure</div></div></div>
+    <div class="trust-item"><div class="trust-ico">🚚</div><div><div class="trust-ttl">پاکستان بھر ڈیلیوری</div><div class="trust-sub">3–5 Days Delivery</div></div></div>
+    <div class="trust-item"><div class="trust-ico">💵</div><div><div class="trust-ttl">کیش آن ڈیلیوری</div><div class="trust-sub">Pay on Delivery</div></div></div>
+    <div class="trust-item"><div class="trust-ico">🔄</div><div><div class="trust-ttl">7 دن واپسی</div><div class="trust-sub">Easy Return Policy</div></div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     FLASH SALE
+══════════════════════════════════ -->
+<section class="flash-wrap" id="flash">
+  <div class="container">
+    <div class="flash-head">
+      <div class="flash-left">
+        <span style="font-size:36px">⚡</span>
+        <span class="flash-badge-pill">فلیش سیل</span>
+        <span class="flash-title">آج کے خاص آفر — محدود وقت</span>
+      </div>
+      <div class="countdown">
+        <div class="cd"><span class="cd-n" id="cdH">05</span><span class="cd-l">گھنٹے</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd"><span class="cd-n" id="cdM">30</span><span class="cd-l">منٹ</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd"><span class="cd-n" id="cdS">00</span><span class="cd-l">سیکنڈ</span></div>
+      </div>
+    </div>
+    <div class="products-grid" id="flashGrid">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     ALL PRODUCTS
+══════════════════════════════════ -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="sec-title-ur">ہمارے تمام پروڈکٹس</div>
+        <div class="sec-title-en">All Products — 100% Natural & Organic</div>
+        <div class="sec-bar"></div>
+      </div>
+      <a href="#" class="see-all">سب دیکھیں →</a>
+    </div>
+    <div class="products-grid" id="mainGrid">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="sec-title-ur">ہمیں کیوں منتخب کریں؟</div>
+        <div class="sec-title-en">Why Choose ZahirOpenStore?</div>
+        <div class="sec-bar"></div>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-ico">🐝</div>
+        <div class="why-ttl">براہ راست مکھیوں سے</div>
+        <div class="why-txt">ہم شہد خود پہاڑی علاقوں کی قدرتی مکھی کالونیوں سے اکٹھا کرتے ہیں۔ درمیان میں کوئی بچولیہ نہیں۔</div>
+      </div>
+      <div class="why-card">
+        <div class="why-ico">🔬</div>
+        <div class="why-ttl">لیب ٹیسٹڈ اور سرٹیفائیڈ</div>
+        <div class="why-txt">ہر پروڈکٹ سرکاری لیبارٹری میں ٹیسٹ ہوتی ہے۔ خالصیت کا سرٹیفیکیٹ ہر آرڈر کے ساتھ۔</div>
+      </div>
+      <div class="why-card">
+        <div class="why-ico">📦</div>
+        <div class="why-ttl">پریمیم پیکنگ اور تیز ڈیلیوری</div>
+        <div class="why-txt">خوبصورت پریمیم پیکنگ میں لپیٹ کر پاکستان بھر میں 3–5 دن میں ڈیلیوری۔ گفٹ کے لیے بھی دستیاب۔</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <div class="sec-title-ur">کسٹمر ریویوز</div>
+        <div class="sec-title-en">What Our Customers Say</div>
+        <div class="sec-bar"></div>
+      </div>
+      <div style="text-align:center;direction:ltr">
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:700;color:var(--g700)">4.9</div>
+        <div style="color:var(--gold);font-size:19px">★★★★★</div>
+        <div style="font-size:11px;color:var(--text-3)">1,247 Reviews</div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av">A</div><div><div class="rev-name">احمد علی</div><div class="rev-city">لاہور</div></div></div>
+        <div class="rev-stars">★★★★★</div>
+        <div class="rev-txt">واقعی 100% اصلی شہد ہے! بالکل پرانے زمانے کا ذائقہ۔ میری فیملی نے بھی بہت پسند کیا۔ دوبارہ آرڈر دیا ہے۔</div>
+        <div class="rev-prod">🍯 دیسی جنگلی شہد</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av" style="background:linear-gradient(135deg,var(--gold),var(--gold-d))">F</div><div><div class="rev-name">فاطمہ خان</div><div class="rev-city">کراچی</div></div></div>
+        <div class="rev-stars">★★★★★</div>
+        <div class="rev-txt">ڈرائی فروٹ شہد صبح ناشتے میں روٹی پر لگا کر کھاتی ہوں — توانائی پورا دن رہتی ہے! دوبارہ آرڈر کیا۔</div>
+        <div class="rev-prod">🌰 ڈرائی فروٹ شہد</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av" style="background:linear-gradient(135deg,#0891b2,#0e7490)">M</div><div><div class="rev-name">محمد یوسف</div><div class="rev-city">اسلام آباد</div></div></div>
+        <div class="rev-stars">★★★★★</div>
+        <div class="rev-txt">دیسی گھی بالکل اصلی ہے، ویسا ہی جیسا گاؤں میں ملتا تھا۔ پیکنگ شاندار، ڈیلیوری تیز۔ بہت خوشی ہوئی!</div>
+        <div class="rev-prod">🧈 خالص دیسی گھی</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av" style="background:linear-gradient(135deg,#ec4899,#be185d)">Z</div><div><div class="rev-name">زینب رضا</div><div class="rev-city">فیصل آباد</div></div></div>
+        <div class="rev-stars">★★★★★</div>
+        <div class="rev-txt">پنجیری بچے کو بہت پسند آئی — بالکل گھر کی بنی جیسی! ڈیلیوری بروقت ہوئی۔ بہت شاندار سروس!</div>
+        <div class="rev-prod">🌾 دیسی پنجیری</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">U</div><div><div class="rev-name">عمر شیخ</div><div class="rev-city">پشاور</div></div></div>
+        <div class="rev-stars">★★★★★</div>
+        <div class="rev-txt">کھجور مکس شہد رمضان میں افطاری کے لیے بہترین رہا۔ قیمت مناسب، معیار اعلیٰ، سروس بے مثال۔</div>
+        <div class="rev-prod">🌴 کھجور مکس شہد</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-head"><div class="rev-av" style="background:linear-gradient(135deg,#0d9488,#065f46)">S</div><div><div class="rev-name">سارہ اقبال</div><div class="rev-city">ملتان</div></div></div>
+        <div class="rev-stars">★★★★☆</div>
+        <div class="rev-txt">WhatsApp پر آرڈر دیا — فوری جواب ملا اور ڈیلیوری بھی وقت پر ہوئی۔ بہت اعتماد والی دکان ہے!</div>
+        <div class="rev-prod">🍯 شہد + گھی بنڈل</div>
+        <div class="verified">✅ تصدیق شدہ خریدار</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl">
+  <div class="container" style="position:relative;z-index:1">
+    <div class="nl-icon">📧</div>
+    <div class="nl-title">خاص آفرز سب سے پہلے پائیں</div>
+    <div class="nl-sub">ای میل سبسکرائب کریں اور ہر ہفتے بہترین ڈیلز پائیں</div>
+    <div class="nl-form">
+      <input type="email" class="nl-inp" placeholder="yourname@email.com">
+      <button class="nl-btn" onclick="toast('سبسکرائب ہو گئے! 🎉')">سبسکرائب کریں</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo-name">Zahir<span>Open</span>Store</div>
+      <div class="foot-tag">خالص دیسی شہد اور آرگینک پروڈکٹس</div>
+      <div class="foot-about">پاکستان میں سب سے قابل بھروسہ آرگینک پروڈکٹس کا گھر۔ 2018 سے لاکھوں خاندانوں کو قدرتی اور ملاوٹ سے پاک پروڈکٹس فراہم کر رہے ہیں۔</div>
+      <div class="socials">
+        <a href="#" class="soc">📘</a><a href="#" class="soc">📸</a>
+        <a href="#" class="soc">💬</a><a href="#" class="soc">▶️</a><a href="#" class="soc">🎵</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>ہمارے پروڈکٹس</h4>
+      <ul>
+        <li><a href="#">دیسی جنگلی شہد</a></li>
+        <li><a href="#">کھجور مکس شہد</a></li>
+        <li><a href="#">ڈرائی فروٹ شہد</a></li>
+        <li><a href="#">خالص دیسی گھی</a></li>
+        <li><a href="#">دیسی پنجیری</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>اہم لنکس</h4>
+      <ul>
+        <li><a href="#">ہمارے بارے میں</a></li>
+        <li><a href="#">واپسی کی پالیسی</a></li>
+        <li><a href="#">ڈیلیوری معلومات</a></li>
+        <li><a href="#">رازداری پالیسی</a></li>
+        <li><a href="#" onclick="goCheckout()">آرڈر کریں</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>رابطہ کریں</h4>
+      <div class="foot-contact-item"><span class="fci-ico">📞</span><div class="fci-txt"><a id="footPhone" href="tel:+923000000000">0300-000-0000</a><br>پیر تا ہفتہ، صبح 9 تا شام 9</div></div>
+      <div class="foot-contact-item"><span class="fci-ico">📧</span><div class="fci-txt"><a id="footEmail" href="#">info@zahiropenstore.pk</a></div></div>
+      <div class="foot-contact-item"><span class="fci-ico">📍</span><div class="fci-txt">لاہور، پنجاب، پاکستان</div></div>
+      <a id="footWaLink" href="#" target="_blank" class="foot-wa">💬 WhatsApp آرڈر</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="foot-copy">© 2025 ZahirOpenStore — تمام حقوق محفوظ ہیں</div>
+    <div class="pay-methods">
+      <span class="pay-m">JazzCash</span><span class="pay-m">EasyPaisa</span>
+      <span class="pay-m">Visa</span><span class="pay-m">MC</span><span class="pay-m">COD</span>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /mainSite -->
+
+<!-- ══════════════════════════════════
+     CHECKOUT PAGE
+══════════════════════════════════ -->
+<div id="coPage" class="co-page">
+  <div style="max-width:1140px;margin:0 auto;padding:0 24px 24px">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;direction:rtl">
+      <button onclick="showMain()" style="background:var(--g100);border:none;padding:11px 20px;border-radius:var(--r-sm);color:var(--g700);font-weight:700;font-size:14px;cursor:pointer;font-family:var(--font-ur);transition:var(--t)" onmouseover="this.style.background='var(--g200)'" onmouseout="this.style.background='var(--g100)'">← واپس جائیں</button>
+      <h1 style="font-family:var(--font-ur);font-size:26px;color:var(--g800);font-weight:800">آرڈر مکمل کریں</h1>
+    </div>
+  </div>
+  <div class="co-grid">
+    <!-- Form -->
+    <div class="co-card">
+      <div class="co-title">🧾 آپ کی معلومات</div>
+      <div class="fg">
+        <label class="fl">پورا نام <span>*</span></label>
+        <input id="cName" class="fi" type="text" placeholder="مثال: محمد احمد" required>
+      </div>
+      <div class="f2">
+        <div class="fg">
+          <label class="fl">موبائل نمبر <span>*</span></label>
+          <input id="cPhone" class="fi" type="tel" placeholder="03XX-XXXXXXX" dir="ltr" required>
+        </div>
+        <div class="fg">
+          <label class="fl">متبادل نمبر</label>
+          <input id="cPhone2" class="fi" type="tel" placeholder="(اختیاری)" dir="ltr">
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl">شہر <span>*</span></label>
+        <select id="cCity" class="fs" required>
+          <option value="">-- شہر منتخب کریں --</option>
+          <optgroup label="پنجاب">
+            <option>لاہور</option><option>فیصل آباد</option><option>راولپنڈی</option><option>گوجرانوالہ</option><option>ملتان</option><option>سیالکوٹ</option><option>بہاولپور</option><option>ساہیوال</option><option>گجرات</option><option>جھنگ</option><option>شیخوپورہ</option><option>اوکاڑہ</option>
+          </optgroup>
+          <optgroup label="سندھ">
+            <option>کراچی</option><option>حیدرآباد</option><option>سکھر</option><option>لاڑکانہ</option><option>میرپور خاص</option><option>نواب شاہ</option>
+          </optgroup>
+          <optgroup label="خیبرپختونخوا">
+            <option>پشاور</option><option>مردان</option><option>ایبٹ آباد</option><option>مانسہرہ</option><option>سوات</option><option>کوہاٹ</option>
+          </optgroup>
+          <optgroup label="بلوچستان">
+            <option>کوئٹہ</option><option>گوادر</option><option>تربت</option><option>خضدار</option>
+          </optgroup>
+          <optgroup label="وفاقی دارالحکومت">
+            <option>اسلام آباد</option>
+          </optgroup>
+          <optgroup label="آزاد کشمیر">
+            <option>مظفرآباد</option><option>میرپور</option><option>راولاکوٹ</option>
+          </optgroup>
+          <optgroup label="گلگت بلتستان">
+            <option>گلگت</option><option>سکردو</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="fg">
+        <label class="fl">مکمل پتہ <span>*</span></label>
+        <textarea id="cAddress" class="fta" placeholder="گھر نمبر، گلی، محلہ، شہر..."></textarea>
+      </div>
+      <div class="fg">
+        <label class="fl">کوئی خاص ہدایت</label>
+        <input id="cNote" class="fi" type="text" placeholder="مثال: صبح ڈیلیور کریں (اختیاری)">
+      </div>
+      <div style="margin-bottom:20px">
+        <div style="font-family:var(--font-ur);font-size:15px;font-weight:800;color:var(--text-2);margin-bottom:14px;direction:rtl">ادائیگی کا طریقہ</div>
+        <div class="pay-opt on">
+          <span class="pay-ico">💵</span>
+          <div><div class="pay-name">کیش آن ڈیلیوری (COD)</div><div class="pay-sub">ڈیلیوری پر ادائیگی کریں</div></div>
+          <span style="margin-right:auto;color:var(--g500);font-size:22px">✅</span>
+        </div>
+      </div>
+      <!-- Hidden form for email submission via FormSubmit -->
+      <form id="orderForm" action="" method="POST" style="display:none" target="orderFrame">
+        <input type="hidden" name="_subject" value="نیا آرڈر — ZahirOpenStore">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" id="fOrderId" name="Order_ID">
+        <input type="hidden" id="fName" name="Customer_Name">
+        <input type="hidden" id="fPhone" name="Mobile_Number">
+        <input type="hidden" id="fCity" name="City">
+        <input type="hidden" id="fAddress" name="Address">
+        <input type="hidden" id="fItems" name="Order_Items">
+        <input type="hidden" id="fTotal" name="Total_Amount">
+        <input type="hidden" id="fNote" name="Special_Note">
+        <input type="hidden" name="Payment" value="Cash on Delivery">
+      </form>
+      <iframe name="orderFrame" style="display:none"></iframe>
+    </div>
+
+    <!-- Summary -->
+    <div>
+      <div class="co-card">
+        <div class="co-title">🛒 آرڈر خلاصہ</div>
+        <div class="co-items" id="coItems"></div>
+        <div class="co-rows">
+          <div class="co-row"><span class="co-row-l">سب ٹوٹل</span><span class="co-row-v" id="coSub">Rs. 0</span></div>
+          <div class="co-row"><span class="co-row-l">ڈیلیوری چارج</span><span class="co-row-v" id="coDel">Rs. 150</span></div>
+          <div class="co-row co-total"><span class="co-total-l">کل رقم</span><span class="co-total-v" id="coGrand">Rs. 0</span></div>
+        </div>
+        <div class="trust-mini">
+          <div class="tmi">✅ 100% خالص ضمانت</div>
+          <div class="tmi">💵 کیش آن ڈیلیوری</div>
+          <div class="tmi">🚚 3–5 دن ڈیلیوری</div>
+          <div class="tmi">🔄 واپسی کا حق</div>
+        </div>
+        <button class="place-btn" onclick="placeOrder()">✅ آرڈر مکمل کریں (COD)</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SUCCESS PAGE
+══════════════════════════════════ -->
+<div id="sucPage" class="suc-page">
+  <div class="suc-card">
+    <div class="suc-anim">🎉</div>
+    <div class="suc-title">آپ کا آرڈر مل گیا!</div>
+    <div class="suc-sub" id="sucMsg">آپ کا آرڈر کامیابی سے موصول ہو گیا ہے۔ ہماری ٹیم جلد رابطہ کرے گی۔</div>
+    <div class="suc-oid" id="sucOid">Order #ZOS-00000</div>
+    <div class="suc-btns">
+      <button class="btn btn-wa btn-lg btn-block" onclick="openWaOrder()" style="font-family:var(--font-ur);justify-content:center">💬 WhatsApp پر تصدیق کریں</button>
+      <button class="btn btn-green btn-lg btn-block" onclick="showMain()" style="font-family:var(--font-ur);justify-content:center">🏠 ہوم واپس جائیں</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     PRODUCT DETAIL MODAL
+══════════════════════════════════ -->
+<div class="overlay" id="pdOverlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-x"><button class="modal-x-btn" onclick="closeModal()">✕</button></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     CART SIDEBAR
+══════════════════════════════════ -->
+<div class="cart-overlay" id="cartOv" onclick="closeCart()"></div>
+<div class="cart-side" id="cartSide">
+  <div class="cart-hdr">
+    <div class="cart-hdr-title">🛒 میری کارٹ <span class="cart-hdr-count" id="cartHdrCount">0</span></div>
+    <button class="cart-x" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-scroll" id="cartBody"></div>
+  <div class="cart-ftr">
+    <div class="cart-sum-row"><span class="cart-sum-lbl">سب ٹوٹل</span><span class="cart-sum-val" id="cartSub">Rs. 0</span></div>
+    <div class="cart-sum-row"><span class="cart-sum-lbl">ڈیلیوری چارج</span><span class="cart-sum-val" id="cartDelFee">Rs. 150</span></div>
+    <div class="cart-total-row"><span class="cart-total-lbl">کل رقم</span><span class="cart-total-val" id="cartGrand">Rs. 0</span></div>
+    <button class="cart-co" onclick="goCheckout()">آرڈر کریں →</button>
+    <button class="cart-wa" onclick="waFromCart()">💬 WhatsApp سے آرڈر کریں</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     ADMIN PANEL
+══════════════════════════════════ -->
+<div class="admin-overlay" id="adminOv" onclick="if(event.target===this)closeAdmin()">
+  <div class="admin-panel">
+    <div class="admin-hdr">
+      <div class="admin-title">⚙️ Admin Panel — ZahirOpenStore</div>
+      <button onclick="closeAdmin()" style="background:rgba(255,255,255,.15);border:none;color:white;width:36px;height:36px;border-radius:50%;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer">✕</button>
+    </div>
+    <div class="admin-body">
+
+      <!-- Store Settings -->
+      <div class="admin-sec">
+        <div class="admin-sec-title">🏪 Store Settings</div>
+        <div class="admin-grid">
+          <div class="admin-field"><label class="admin-label">WhatsApp Number</label><input class="admin-input" id="aWa" placeholder="923001234567" dir="ltr"></div>
+          <div class="admin-field"><label class="admin-label">Email for Orders</label><input class="admin-input" id="aEmail" placeholder="your@email.com" dir="ltr"></div>
+          <div class="admin-field"><label class="admin-label">Phone (Header/Footer)</label><input class="admin-input" id="aPhone" placeholder="0300-1234567" dir="ltr"></div>
+          <div class="admin-field"><label class="admin-label">Delivery Fee (Rs.)</label><input class="admin-input" id="aDelFee" type="number" placeholder="150" dir="ltr"></div>
+        </div>
+        <div class="admin-email-note">
+          📧 <strong>آرڈر ای میل سیٹ اپ:</strong> ای میل فیلڈ میں اپنا ای میل ڈالیں۔ آرڈر خودبخود <strong>FormSubmit.co</strong> (مفت سروس) کے ذریعے آپ کے ای میل پر پہنچے گا۔ پہلی بار فارم سبمٹ ہونے پر آپ کو تصدیقی ای میل آئے گا — اسے ضرور approve کریں۔ <br><br>
+          📊 <strong>Google Sheet کے لیے:</strong> تمام آرڈرز خودبخود Local Storage میں محفوظ ہوتے ہیں۔ آپ "آرڈرز دیکھیں" بٹن سے دیکھ سکتے ہیں۔
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="admin-sec">
+        <div class="admin-sec-title">🍯 Product Prices & Settings</div>
+        <div id="adminProducts"></div>
+      </div>
+
+      <!-- Orders -->
+      <div class="admin-sec">
+        <div class="admin-sec-title">📋 Saved Orders</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+          <button class="save-btn" onclick="viewOrders()" style="background:linear-gradient(135deg,#0891b2,#0e7490)">📋 آرڈرز دیکھیں</button>
+          <button class="save-btn" onclick="exportOrders()" style="background:linear-gradient(135deg,var(--gold-d),#92400e)">📥 CSV Export</button>
+          <button onclick="clearOrders()" style="background:var(--red-l);color:var(--red);border:1px solid var(--red);padding:11px 20px;border-radius:var(--r-sm);font-size:13px;font-weight:700;cursor:pointer">🗑️ آرڈرز صاف کریں</button>
+        </div>
+        <div id="ordersList" style="max-height:300px;overflow-y:auto;font-size:13px;direction:rtl"></div>
+      </div>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="save-btn" onclick="saveAdmin()">💾 تمام ترتیبات محفوظ کریں</button>
+        <button onclick="closeAdmin()" style="background:var(--bg);color:var(--text-2);border:1px solid var(--border);padding:11px 24px;border-radius:var(--r-sm);font-size:14px;font-weight:600;cursor:pointer">بند کریں</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════ -->
+<script>
+// ═══════════════════════════════════
+// PRODUCT DATABASE (NO HARDCODED PRICES)
+// ═══════════════════════════════════
+const DEFAULTS = {
+  deliveryFee: 150,
+  whatsapp: '923001234567',
+  email: 'your@email.com',
+  phone: '0300-000-0000',
+};
+
+const PRODUCT_DEFAULTS = [
+  {
+    id:'honey-wild', emoji:'🍯',
+    nameUr:'دیسی جنگلی شہد', nameEn:'Desi Wild Honey',
+    price:0, oldPrice:0,
+    variants:['500g','1kg'],
+    rating:5, reviews:248,
+    showDiscount:false, limitedStock:false, stockText:'صرف ۱۲ باقی', isNew:false,
+    desc:'پہاڑوں کی قدرتی مکھی کالونیوں سے حاصل کردہ خالص جنگلی شہد۔ کوئی مصنوعی رنگ، چینی یا پریزرویٹو نہیں۔ لیبارٹری میں ٹیسٹ شدہ اور 100% خالص سرٹیفائیڈ۔',
+    benefits:['قوت مدافعت بڑھائے','معدے کی تکالیف دور کرے','قدرتی توانائی فراہم کرے','زخم بھرنے میں مدد کرے','اینٹی بیکٹیریل خصوصیات','بچوں کے لیے محفوظ (1+ سال)'],
+    bg:'linear-gradient(135deg,#f0fdf4,#fef9ee)'
+  },
+  {
+    id:'date-honey', emoji:'🌴',
+    nameUr:'کھجور مکس شہد', nameEn:'Date Mix Honey',
+    price:0, oldPrice:0,
+    variants:['500g','1kg'],
+    rating:5, reviews:186,
+    showDiscount:false, limitedStock:false, stockText:'صرف ۸ باقی', isNew:false,
+    desc:'خالص دیسی شہد اور عجوہ کھجور کا انمول امتزاج۔ رمضان المبارک میں افطاری کے لیے مثالی۔ کھجور کی قدرتی مٹھاس اور شہد کی شفائی خصوصیات۔',
+    benefits:['رمضان افطاری کے لیے مثالی','فوری توانائی فراہم کرے','خون صاف کرے','ہڈیاں مضبوط کرے','دل کو تقویت دے','جسمانی کمزوری دور کرے'],
+    bg:'linear-gradient(135deg,#fffbeb,#fef3c7)'
+  },
+  {
+    id:'dry-fruit', emoji:'🌰',
+    nameUr:'ڈرائی فروٹ شہد', nameEn:'Dry Fruit Mix Honey',
+    price:0, oldPrice:0,
+    variants:['500g','1kg'],
+    rating:4.5, reviews:314,
+    showDiscount:false, limitedStock:false, stockText:'محدود اسٹاک', isNew:false,
+    desc:'35 سے زیادہ پریمیم میوہ جات — بادام، کاجو، پستہ، اخروٹ، چلغوزہ — خالص شہد میں ملائے گئے ہیں۔ پریمیم فیملی پیک، گفٹ کے لیے بھی بہترین۔',
+    benefits:['دماغی صحت بہتر کرے','یادداشت تیز کرے','جوڑوں کا درد کم کرے','بال اور جلد نکھارے','سردیوں میں گرمائش','وزن کنٹرول میں مدد'],
+    bg:'linear-gradient(135deg,#fdf4ff,#faf0e6)'
+  },
+  {
+    id:'ghee', emoji:'🧈',
+    nameUr:'خالص دیسی گھی', nameEn:'Pure Desi Ghee',
+    price:0, oldPrice:0,
+    variants:['500g','1kg'],
+    rating:5, reviews:421,
+    showDiscount:false, limitedStock:false, stockText:'محدود اسٹاک', isNew:false,
+    desc:'گائے کے تازہ دودھ سے روایتی طریقے سے بنا خالص دیسی گھی۔ گاؤں کی روایتی مدھانی سے بنایا گیا۔ نہ کوئی مصنوعی چکنائی، نہ کوئی پریزرویٹو۔',
+    benefits:['ہاضمہ بہتر کرے','ہڈیاں مضبوط کرے','جوڑوں کی چکناہٹ بڑھائے','دماغ تیز کرے','بچوں کی نشوونما میں مدد','قوت بخشے'],
+    bg:'linear-gradient(135deg,#fffde7,#fff9c4)'
+  },
+  {
+    id:'panjeeri', emoji:'🌾',
+    nameUr:'دیسی پنجیری', nameEn:'Desi Panjeeri',
+    price:0, oldPrice:0,
+    variants:['500g','1kg'],
+    rating:5, reviews:178,
+    showDiscount:false, limitedStock:false, stockText:'محدود اسٹاک', isNew:false,
+    desc:'روایتی دیسی پنجیری — آٹا، گھی، میوہ جات، گنڈ اور خاص مصالحوں سے بنی۔ مائیں اور بزرگ خاص طور پر ٹھنڈ میں استعمال کریں۔',
+    benefits:['سردیوں میں جسم گرم رکھے','نئی ماؤں کے لیے مفید','بچوں کی نشوونما بہتر کرے','ہڈیاں مضبوط کرے','توانائی بخشے','ہاضمہ ٹھیک رکھے'],
+    bg:'linear-gradient(135deg,#f0fdf4,#dcfce7)'
+  }
+];
+
+// ═══════════════════════════════════
+// STATE
+// ═══════════════════════════════════
+let S = {
+  cart:[],
+  products: JSON.parse(localStorage.getItem('zos_products')) || PRODUCT_DEFAULTS,
+  settings: JSON.parse(localStorage.getItem('zos_settings')) || DEFAULTS,
+  lastOrder: null,
+  selectedVariants:{},
+  selectedQty:{},
+};
+
+function getDeliveryFee(){ return parseInt(S.settings.deliveryFee)||150; }
+function getSubtotal(){ return S.cart.reduce((a,i)=>a+i.price*i.qty,0); }
+function getCartCount(){ return S.cart.reduce((a,i)=>a+i.qty,0); }
+function getGrand(){ const s=getSubtotal(); return s>0?s+getDeliveryFee():0; }
+function fmtRs(n){ return n>0?'Rs. '+n.toLocaleString():'قیمت جلد آئے گی'; }
+function fmtRsNum(n){ return 'Rs. '+n.toLocaleString(); }
+
+// ═══════════════════════════════════
+// CART
+// ═══════════════════════════════════
+function openCart(){ document.getElementById('cartSide').classList.add('on'); document.getElementById('cartOv').classList.add('on'); renderCart(); }
+function closeCart(){ document.getElementById('cartSide').classList.remove('on'); document.getElementById('cartOv').classList.remove('on'); }
+
+function addById(id, qty=1, variant=''){
+  const p=S.products.find(x=>x.id===id);
+  if(!p){ toast('پروڈکٹ نہیں ملی'); return; }
+  if(p.price<=0){ toast('⚠️ قیمت ابھی سیٹ نہیں ہوئی۔ ایڈمن پینل سے قیمت شامل کریں۔'); return; }
+  const v=variant||S.selectedVariants[id]||p.variants[0]||'';
+  const ex=S.cart.find(i=>i.id===id&&i.variant===v);
+  if(ex){ ex.qty+=qty; } else { S.cart.push({id:p.id,nameUr:p.nameUr,emoji:p.emoji,price:p.price,qty,variant:v}); }
+  updateCartUI();
+  toast(`${p.nameUr} کارٹ میں شامل ✅`);
+  saveCartLS();
+}
+
+function addDirect(nameUr,price,emoji,qty=1,variant=''){
+  if(price<=0){ toast('⚠️ قیمت سیٹ نہیں'); return; }
+  const ex=S.cart.find(i=>i.id===nameUr&&i.variant===variant);
+  if(ex){ ex.qty+=qty; } else { S.cart.push({id:nameUr,nameUr,emoji,price,qty,variant}); }
+  updateCartUI();
+  toast(`${nameUr} کارٹ میں شامل ✅`);
+  saveCartLS();
+}
+
+function changeQty(idx,d){
+  S.cart[idx].qty+=d;
+  if(S.cart[idx].qty<=0) S.cart.splice(idx,1);
+  updateCartUI(); renderCart(); saveCartLS();
+}
+
+function removeItem(idx){ S.cart.splice(idx,1); updateCartUI(); renderCart(); saveCartLS(); toast('پروڈکٹ ہٹا دی'); }
+
+function saveCartLS(){ localStorage.setItem('zos_cart', JSON.stringify(S.cart)); }
+function loadCartLS(){
+  const c=localStorage.getItem('zos_cart');
+  if(c) S.cart=JSON.parse(c);
+}
+
+function updateCartUI(){
+  const n=getCartCount();
+  document.getElementById('cartBadge').textContent=n;
+  document.getElementById('cartHdrCount').textContent=n;
+  const s=getSubtotal(); const d=s>0?getDeliveryFee():0; const g=s+d;
+  document.getElementById('cartSub').textContent=fmtRsNum(s);
+  document.getElementById('cartDelFee').textContent=d>0?fmtRsNum(d):'مفت';
+  document.getElementById('cartGrand').textContent=fmtRsNum(g);
+}
+
+function renderCart(){
+  const el=document.getElementById('cartBody');
+  if(!S.cart.length){ el.innerHTML=`<div class="cart-empty"><div class="cart-empty-icon">🛒</div><div class="cart-empty-t">آپ کی کارٹ خالی ہے</div><p style="font-size:12px">Your cart is empty</p></div>`; return; }
+  el.innerHTML=S.cart.map((it,i)=>`
+    <div class="citem">
+      <div class="citem-img">${it.emoji}</div>
+      <div class="citem-info">
+        <div class="citem-name">${it.nameUr}</div>
+        <div class="citem-var">${it.variant||''}</div>
+        <div class="citem-row">
+          <span class="citem-price">${fmtRsNum(it.price*it.qty)}</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="mini-qty">
+              <button class="mq-btn" onclick="changeQty(${i},-1)">−</button>
+              <span class="mq-n">${it.qty}</span>
+              <button class="mq-btn" onclick="changeQty(${i},1)">+</button>
+            </div>
+            <button class="citem-rm" onclick="removeItem(${i})">🗑️</button>
+          </div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+// ═══════════════════════════════════
+// PRODUCT MODAL
+// ═══════════════════════════════════
+function openModal(id){
+  const p=S.products.find(x=>x.id===id);
+  if(!p) return;
+  S.selectedVariants[id]=p.variants[0]||'';
+  S.selectedQty[id]=1;
+  const stars='★'.repeat(Math.floor(p.rating))+(p.rating%1?'½':'')+'☆'.repeat(5-Math.ceil(p.rating));
+  const vBtns=p.variants.map((v,i)=>`<button class="vl-btn${i===0?' on':''}" onclick="selVar('${id}','${v}',this)">${v}</button>`).join('');
+  const bens=p.benefits.map(b=>`<div class="ben-item">${b}</div>`).join('');
+  const priceHtml=p.price>0
+    ?`<div class="modal-price-block"><div>${p.oldPrice>0?`<span class="modal-price-old">Rs. ${p.oldPrice.toLocaleString()}</span>`:''}
+       <span class="modal-price">Rs. ${p.price.toLocaleString()}</span></div>
+       ${p.oldPrice>0&&p.price>0?`<div class="modal-save">آپ بچا رہے ہیں: Rs. ${(p.oldPrice-p.price).toLocaleString()} (${Math.round((p.oldPrice-p.price)/p.oldPrice*100)}% چھوٹ)</div>`:''}
+       </div>`
+    :`<div style="background:var(--gold-pale);border:1px solid var(--gold-l);border-radius:var(--r-sm);padding:14px;margin-bottom:18px;font-family:var(--font-ur);color:var(--gold-d);font-size:14px;direction:rtl">⚙️ قیمت جلد آئے گی — ایڈمن پینل سے سیٹ کریں</div>`;
+  document.getElementById('modalBody').innerHTML=`
+    <div class="modal-img-col" style="background:${p.bg}">
+      <div class="modal-emoji">${p.emoji}</div>
+      <div class="modal-certs">
+        <span class="cert">✅ 100% Pure</span>
+        <span class="cert">🔬 Lab Tested</span>
+        <span class="cert">🌿 Organic</span>
+      </div>
+    </div>
+    <div class="modal-info">
+      <div class="modal-name-ur">${p.nameUr}</div>
+      <div class="modal-name-en">${p.nameEn}</div>
+      <div class="modal-star-row">
+        <span style="color:var(--gold);font-size:18px">${'★'.repeat(Math.floor(p.rating))}</span>
+        <span style="font-size:13px;color:var(--text-3)">(${p.reviews} ریویوز)</span>
+      </div>
+      ${priceHtml}
+      ${p.variants.length?`<div class="vl"><span class="vl-lbl">سائز:</span><div class="vl-btns">${vBtns}</div></div>`:''}
+      <div class="qty-row">
+        <span class="qty-lbl">مقدار:</span>
+        <div class="qty-ctl">
+          <button class="qty-b" onclick="chModalQty('${id}',-1)">−</button>
+          <input class="qty-inp" id="mqty${id}" type="number" value="1" min="1" max="99">
+          <button class="qty-b" onclick="chModalQty('${id}',1)">+</button>
+        </div>
+      </div>
+      <div class="modal-btns">
+        <button class="btn btn-green btn-lg" onclick="mAddCart('${id}')" style="font-family:var(--font-ur)">🛒 کارٹ میں شامل</button>
+        <div class="modal-btn-row">
+          <button class="btn btn-gold" onclick="mBuyNow('${id}')" style="font-family:var(--font-ur)">⚡ ابھی خریدیں</button>
+          <button class="btn btn-wa" onclick="mWa('${id}')" style="font-family:var(--font-ur)">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab-head">
+          <button class="tab-btn on" onclick="switchTab(this,'td${id}')">تفصیل</button>
+          <button class="tab-btn" onclick="switchTab(this,'tb${id}')">صحت کے فوائد</button>
+          <button class="tab-btn" onclick="switchTab(this,'tdl${id}')">ڈیلیوری</button>
+        </div>
+        <div class="tab-pane on" id="td${id}"><p>${p.desc}</p></div>
+        <div class="tab-pane" id="tb${id}">${bens}</div>
+        <div class="tab-pane" id="tdl${id}">
+          <p>📦 پاکستان بھر 3–5 کاروباری دن میں ڈیلیوری</p>
+          <p>💵 Cash on Delivery دستیاب ہے</p>
+          <p>🔄 7 دن کے اندر واپسی کا حق</p>
+          <p>🆓 Rs. 3,000 سے اوپر آرڈر پر مفت ڈیلیوری</p>
+        </div>
+      </div>
+    </div>`;
+  document.getElementById('pdOverlay').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){ document.getElementById('pdOverlay').classList.remove('on'); document.body.style.overflow=''; }
+function selVar(id,v,btn){ S.selectedVariants[id]=v; btn.closest('.vl-btns').querySelectorAll('.vl-btn').forEach(b=>b.classList.remove('on')); btn.classList.add('on'); }
+function chModalQty(id,d){ const inp=document.getElementById('mqty'+id); let v=parseInt(inp.value)+d; if(v<1)v=1; if(v>99)v=99; inp.value=v; S.selectedQty[id]=v; }
+function mAddCart(id){ const p=S.products.find(x=>x.id===id); if(!p)return; const qty=parseInt(document.getElementById('mqty'+id).value)||1; const v=S.selectedVariants[id]||''; addById(id,qty,v); closeModal(); openCart(); }
+function mBuyNow(id){ mAddCart(id); setTimeout(goCheckout,350); }
+function mWa(id){
+  const p=S.products.find(x=>x.id===id); if(!p)return;
+  const qty=parseInt(document.getElementById('mqty'+id).value)||1;
+  const v=S.selectedVariants[id]||'';
+  const priceStr=p.price>0?`Rs. ${(p.price*qty).toLocaleString()}`:'(قیمت پوچھنی ہے)';
+  const msg=`السلام علیکم ZahirOpenStore! 🍯\n\nمجھے یہ چاہیے:\n${p.nameUr} (${v||p.nameEn})\nمقدار: ${qty}\nقیمت: ${priceStr}\n\nبراہ کرم تصدیق کریں۔`;
+  wa(msg);
+}
+function switchTab(btn,id){ btn.closest('.tabs').querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('on')); btn.closest('.tabs').querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('on')); btn.classList.add('on'); document.getElementById(id).classList.add('on'); }
+
+// ═══════════════════════════════════
+// RENDER PRODUCT GRIDS
+// ═══════════════════════════════════
+function makeCard(p, showBadge=true){
+  const priceBlock=p.price>0
+    ?`<div class="pricing-block"><div class="price-now"><span class="price-cur">Rs. </span>${p.price.toLocaleString()}</div>${p.oldPrice>0?`<div class="price-old">Rs. ${p.oldPrice.toLocaleString()}</div>`:''}</div>`
+    :`<div style="font-family:var(--font-ur);font-size:12px;color:var(--text-3)">قیمت جلد آئے گی</div>`;
+  const discPct=p.oldPrice>0&&p.price>0?Math.round((p.oldPrice-p.price)/p.oldPrice*100):0;
+  return `<div class="pcard" onclick="openModal('${p.id}')">
+    <div class="pcard-img" style="background:${p.bg}">
+      <span class="pcard-emoji">${p.emoji}</span>
+      ${showBadge&&p.showDiscount&&discPct>0?`<div class="badge-off">-${discPct}%</div>`:''}
+      ${p.limitedStock?`<div class="badge-stock ur">${p.stockText}</div>`:''}
+      ${p.isNew?`<div class="badge-stock badge-new">نیا</div>`:''}
+      <button class="wish" onclick="event.stopPropagation();toggleWish(this)">🤍</button>
+    </div>
+    <div class="pcard-body">
+      <div class="pcard-name-ur">${p.nameUr}</div>
+      <div class="pcard-name-en">${p.nameEn}</div>
+      ${p.variants.length?`<div class="pcard-vars">${p.variants.map(v=>`<span class="var-chip">${v}</span>`).join('')}</div>`:''}
+      <div class="pcard-stars"><span class="stars">${'★'.repeat(Math.floor(p.rating))}</span><span class="stars-n">(${p.reviews})</span></div>
+      <div class="pcard-pricing">${priceBlock}<button class="atc" onclick="event.stopPropagation();addById('${p.id}',1)">کارٹ +</button></div>
+    </div>
+  </div>`;
+}
+
+function renderGrids(){
+  document.getElementById('flashGrid').innerHTML=S.products.map(p=>makeCard(p)).join('');
+  document.getElementById('mainGrid').innerHTML=S.products.map(p=>makeCard(p)).join('');
+}
+
+function toggleWish(btn){ btn.classList.toggle('on'); btn.textContent=btn.classList.contains('on')?'❤️':'🤍'; if(btn.classList.contains('on'))toast('پسندیدہ میں شامل ❤️'); }
+
+// ═══════════════════════════════════
+// CHECKOUT
+// ═══════════════════════════════════
+function goCheckout(){
+  closeCart();
+  if(!S.cart.length){ toast('کارٹ خالی ہے! پہلے کچھ شامل کریں'); return; }
+  showSection('checkout');
+  renderCoSummary();
+}
+function renderCoSummary(){
+  const s=getSubtotal(); const d=s>0?getDeliveryFee():0; const g=s+d;
+  document.getElementById('coItems').innerHTML=S.cart.map(it=>`
+    <div class="co-item">
+      <div class="co-img">${it.emoji}</div>
+      <div class="co-item-name">${it.nameUr}${it.variant?` (${it.variant})`:''}</div>
+      <div class="co-item-qty">x${it.qty}</div>
+      <div class="co-item-price">${fmtRsNum(it.price*it.qty)}</div>
+    </div>`).join('');
+  document.getElementById('coSub').textContent=fmtRsNum(s);
+  document.getElementById('coDel').textContent=fmtRsNum(d);
+  document.getElementById('coGrand').textContent=fmtRsNum(g);
+}
+
+function placeOrder(){
+  const name=document.getElementById('cName').value.trim();
+  const phone=document.getElementById('cPhone').value.trim();
+  const city=document.getElementById('cCity').value;
+  const addr=document.getElementById('cAddress').value.trim();
+  const note=document.getElementById('cNote').value.trim();
+  if(!name||!phone||!city||!addr){ toast('⚠️ تمام ضروری خانے بھریں'); return; }
+  if(phone.length<10){ toast('⚠️ درست موبائل نمبر درج کریں'); return; }
+  if(!S.cart.length){ toast('⚠️ کارٹ خالی ہے'); return; }
+
+  const oid='ZOS-'+Date.now().toString().slice(-6);
+  const s=getSubtotal(); const d=s>0?getDeliveryFee():0; const g=s+d;
+  const itemsStr=S.cart.map(i=>`${i.nameUr} (${i.variant||''}) x${i.qty} = Rs.${(i.price*i.qty).toLocaleString()}`).join(' | ');
+
+  S.lastOrder={oid,name,phone,city,addr,note,cart:[...S.cart],subtotal:s,delivery:d,grand:g,date:new Date().toLocaleString('ur-PK')};
+
+  // Save to localStorage
+  const orders=JSON.parse(localStorage.getItem('zos_orders')||'[]');
+  orders.unshift(S.lastOrder);
+  localStorage.setItem('zos_orders', JSON.stringify(orders));
+
+  // Email via FormSubmit
+  const email=S.settings.email;
+  if(email&&email!=='your@email.com'&&email.includes('@')){
+    const form=document.getElementById('orderForm');
+    form.action=`https://formsubmit.co/${email}`;
+    document.getElementById('fOrderId').value=oid;
+    document.getElementById('fName').value=name;
+    document.getElementById('fPhone').value=phone;
+    document.getElementById('fCity').value=city;
+    document.getElementById('fAddress').value=addr;
+    document.getElementById('fItems').value=itemsStr;
+    document.getElementById('fTotal').value=`Rs. ${g.toLocaleString()} (COD)`;
+    document.getElementById('fNote').value=note||'---';
+    try{ form.submit(); }catch(e){}
+  }
+
+  // Clear cart
+  S.cart=[];
+  updateCartUI();
+  saveCartLS();
+
+  // Show success
+  document.getElementById('sucOid').textContent=`Order #${oid}`;
+  document.getElementById('sucMsg').innerHTML=`<strong>${name}</strong> صاحب/صاحبہ، آپ کا آرڈر موصول ہو گیا!<br>ہماری ٹیم <strong>${phone}</strong> پر جلد رابطہ کرے گی۔<br>تخمینی ڈیلیوری: 3–5 کاروباری دن`;
+  showSection('success');
+  setTimeout(openWaOrder, 1400);
+}
+
+function openWaOrder(){
+  if(!S.lastOrder) return;
+  const {oid,name,phone,city,addr,cart:oc,grand,note}=S.lastOrder;
+  const items=oc.map(i=>`• ${i.nameUr} x${i.qty} = Rs.${(i.price*i.qty).toLocaleString()}`).join('\n');
+  const msg=`السلام علیکم ZahirOpenStore! 🍯\n\nآرڈر نمبر: ${oid}\nنام: ${name}\nموبائل: ${phone}\nشہر: ${city}\nپتہ: ${addr}\n${note?`نوٹ: ${note}\n`:''}\nآرڈر:\n${items}\n\nکل: Rs. ${grand.toLocaleString()} (COD)\n\nبراہ کرم تصدیق کریں۔ شکریہ!`;
+  wa(msg);
+}
+
+function waFromCart(){
+  if(!S.cart.length){ toast('کارٹ خالی ہے'); return; }
+  const items=S.cart.map(i=>`• ${i.nameUr} x${i.qty} = Rs.${(i.price*i.qty).toLocaleString()}`).join('\n');
+  const msg=`السلام علیکم ZahirOpenStore! 🍯\n\nیہ آرڈر کرنا ہے:\n${items}\n\nکل: Rs. ${getGrand().toLocaleString()} (COD)\n\nبراہ کرم رابطہ کریں۔`;
+  wa(msg);
+}
+
+// ═══════════════════════════════════
+// ADMIN PANEL
+// ═══════════════════════════════════
+function openAdmin(){
+  const a=S.settings;
+  document.getElementById('aWa').value=a.whatsapp||'';
+  document.getElementById('aEmail').value=a.email||'';
+  document.getElementById('aPhone').value=a.phone||'';
+  document.getElementById('aDelFee').value=a.deliveryFee||150;
+  renderAdminProducts();
+  document.getElementById('adminOv').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeAdmin(){ document.getElementById('adminOv').classList.remove('on'); document.body.style.overflow=''; }
+
+function renderAdminProducts(){
+  document.getElementById('adminProducts').innerHTML=S.products.map((p,i)=>`
+    <div class="admin-product-card">
+      <div class="admin-product-title">${p.emoji} ${p.nameUr} <span style="font-size:11px;color:var(--text-3);font-weight:400">${p.nameEn}</span></div>
+      <div class="admin-grid">
+        <div class="admin-field">
+          <label class="admin-label">Current Price (Rs.)</label>
+          <input class="admin-input" id="ap_price_${i}" type="number" value="${p.price||''}" placeholder="0 = نہیں دکھائی جائے گی" dir="ltr">
+        </div>
+        <div class="admin-field">
+          <label class="admin-label">Old Price / Crossed Price (Rs.)</label>
+          <input class="admin-input" id="ap_old_${i}" type="number" value="${p.oldPrice||''}" placeholder="0 = نہیں دکھائی جائے گی" dir="ltr">
+        </div>
+        <div class="admin-field">
+          <label class="admin-label">Star Rating (1-5)</label>
+          <input class="admin-input" id="ap_rating_${i}" type="number" value="${p.rating}" min="1" max="5" step="0.5" dir="ltr">
+        </div>
+        <div class="admin-field">
+          <label class="admin-label">Reviews Count</label>
+          <input class="admin-input" id="ap_rev_${i}" type="number" value="${p.reviews}" dir="ltr">
+        </div>
+        <div class="admin-field">
+          <label class="admin-label">Limited Stock Text (Urdu)</label>
+          <input class="admin-input" id="ap_stxt_${i}" value="${p.stockText||''}">
+        </div>
+      </div>
+      <div class="admin-badge-row">
+        <label class="admin-toggle"><input type="checkbox" id="ap_disc_${i}" ${p.showDiscount?'checked':''}> Show Discount Badge</label>
+        <label class="admin-toggle"><input type="checkbox" id="ap_lim_${i}" ${p.limitedStock?'checked':''}> Show Limited Stock</label>
+        <label class="admin-toggle"><input type="checkbox" id="ap_new_${i}" ${p.isNew?'checked':''}> Show NEW Badge</label>
+      </div>
+    </div>`).join('');
+}
+
+function saveAdmin(){
+  S.settings.whatsapp=document.getElementById('aWa').value.trim()||DEFAULTS.whatsapp;
+  S.settings.email=document.getElementById('aEmail').value.trim()||DEFAULTS.email;
+  S.settings.phone=document.getElementById('aPhone').value.trim()||DEFAULTS.phone;
+  S.settings.deliveryFee=parseInt(document.getElementById('aDelFee').value)||150;
+
+  S.products.forEach((p,i)=>{
+    p.price=parseFloat(document.getElementById(`ap_price_${i}`).value)||0;
+    p.oldPrice=parseFloat(document.getElementById(`ap_old_${i}`).value)||0;
+    p.rating=parseFloat(document.getElementById(`ap_rating_${i}`).value)||5;
+    p.reviews=parseInt(document.getElementById(`ap_rev_${i}`).value)||0;
+    p.stockText=document.getElementById(`ap_stxt_${i}`).value||'محدود اسٹاک';
+    p.showDiscount=document.getElementById(`ap_disc_${i}`).checked;
+    p.limitedStock=document.getElementById(`ap_lim_${i}`).checked;
+    p.isNew=document.getElementById(`ap_new_${i}`).checked;
+  });
+
+  localStorage.setItem('zos_products', JSON.stringify(S.products));
+  localStorage.setItem('zos_settings', JSON.stringify(S.settings));
+
+  // Update phone/WA in UI
+  applySettings();
+  renderGrids();
+  updateCartUI();
+  closeAdmin();
+  toast('✅ تمام ترتیبات محفوظ ہو گئی!');
+}
+
+function applySettings(){
+  const ph=S.settings.phone||'0300-000-0000';
+  const waNum=S.settings.whatsapp||'923001234567';
+  ['ann-phone','ann-phone2'].forEach(id=>{ const el=document.getElementById(id); if(el)el.textContent=ph; });
+  const fp=document.getElementById('footPhone'); if(fp){ fp.href=`tel:+${waNum}`; fp.textContent=ph; }
+  const fe=document.getElementById('footEmail'); if(fe){ fe.href=`mailto:${S.settings.email}`; fe.textContent=S.settings.email; }
+  const fw=document.getElementById('footWaLink'); if(fw) fw.href=`https://wa.me/${waNum}`;
+}
+
+function viewOrders(){
+  const orders=JSON.parse(localStorage.getItem('zos_orders')||'[]');
+  const el=document.getElementById('ordersList');
+  if(!orders.length){ el.innerHTML='<p style="color:var(--text-3);font-family:var(--font-ur)">ابھی کوئی آرڈر نہیں۔</p>'; return; }
+  el.innerHTML=orders.map((o,i)=>`
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:14px;margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong style="color:var(--g700)">#${o.oid}</strong>
+        <span style="font-size:11px;color:var(--text-3)">${o.date||''}</span>
+      </div>
+      <div style="font-family:var(--font-ur)">${o.name} — ${o.phone} — ${o.city}</div>
+      <div style="font-size:12px;color:var(--text-3);margin-top:4px">${o.cart.map(c=>`${c.nameUr} x${c.qty}`).join(', ')}</div>
+      <div style="color:var(--g600);font-weight:700;margin-top:6px;direction:ltr">Rs. ${o.grand.toLocaleString()} (COD)</div>
+    </div>`).join('');
+}
+
+function exportOrders(){
+  const orders=JSON.parse(localStorage.getItem('zos_orders')||'[]');
+  if(!orders.length){ toast('کوئی آرڈر نہیں'); return; }
+  const rows=[['Order ID','Name','Phone','City','Address','Items','Total','Date']];
+  orders.forEach(o=>rows.push([o.oid,o.name,o.phone,o.city,o.addr,o.cart.map(c=>`${c.nameUr} x${c.qty}`).join('; '),o.grand,o.date]));
+  const csv=rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const a=document.createElement('a');
+  a.href='data:text/csv;charset=utf-8,\uFEFF'+encodeURIComponent(csv);
+  a.download=`ZahirOpenStore_Orders_${Date.now()}.csv`;
+  a.click();
+  toast('📥 CSV ڈاؤنلوڈ ہو گیا!');
+}
+
+function clearOrders(){
+  if(!confirm('کیا آپ واقعی تمام آرڈرز صاف کرنا چاہتے ہیں؟')) return;
+  localStorage.removeItem('zos_orders');
+  document.getElementById('ordersList').innerHTML='';
+  toast('آرڈرز صاف ہو گئے');
+}
+
+// ═══════════════════════════════════
+// SECTIONS
+// ═══════════════════════════════════
+function showSection(sec){
+  document.getElementById('mainSite').style.display=sec==='main'?'block':'none';
+  document.getElementById('coPage').style.display=sec==='checkout'?'block':'none';
+  document.getElementById('sucPage').style.display=sec==='success'?'flex':'none';
+  window.scrollTo(0,0);
+}
+function showMain(){ showSection('main'); }
+function goCheckoutP(){ showSection('checkout'); }
+
+// ═══════════════════════════════════
+// HERO SLIDER
+// ═══════════════════════════════════
+let heroIdx=0;
+function heroGo(n){
+  heroIdx=n;
+  document.getElementById('hSlides').style.transform=`translateX(-${n*100}%)`;
+  document.querySelectorAll('.h-dot').forEach((d,i)=>d.classList.toggle('on',i===n));
+}
+setInterval(()=>heroGo((heroIdx+1)%3),5500);
+
+// ═══════════════════════════════════
+// COUNTDOWN
+// ═══════════════════════════════════
+let cdSecs=5*3600+30*60;
+setInterval(()=>{
+  if(cdSecs<=0){cdSecs=24*3600;return;}cdSecs--;
+  const h=Math.floor(cdSecs/3600),m=Math.floor((cdSecs%3600)/60),s=cdSecs%60;
+  const f=(v,id)=>{const e=document.getElementById(id);if(e)e.textContent=String(v).padStart(2,'0')};
+  f(h,'cdH');f(m,'cdM');f(s,'cdS');
+},1000);
+
+// ═══════════════════════════════════
+// TOAST
+// ═══════════════════════════════════
+function toast(msg,duration=3200){
+  const w=document.getElementById('toastWrap');
+  const t=document.createElement('div');
+  t.className='toast';
+  t.innerHTML=`<span>🍯</span><span>${msg}</span>`;
+  w.appendChild(t);
+  setTimeout(()=>t.classList.add('on'),30);
+  setTimeout(()=>{t.classList.remove('on');setTimeout(()=>t.remove(),400);},duration);
+}
+
+// ═══════════════════════════════════
+// WHATSAPP
+// ═══════════════════════════════════
+function wa(msg){ window.open(`https://wa.me/${S.settings.whatsapp||'923001234567'}?text=${encodeURIComponent(msg)}`,'_blank'); }
+
+// ═══════════════════════════════════
+// SCROLL TOP
+// ═══════════════════════════════════
+window.addEventListener('scroll',()=>{
+  const b=document.getElementById('scrollBtn');
+  b.classList.toggle('on',window.scrollY>500);
+});
+
+// ═══════════════════════════════════
+// SCROLL TO PRODUCTS
+// ═══════════════════════════════════
+function scrollToProducts(){ document.getElementById('products').scrollIntoView({behavior:'smooth'}); }
+
+// ═══════════════════════════════════
+// INIT
+// ═══════════════════════════════════
+(function init(){
+  loadCartLS();
+  applySettings();
+  renderGrids();
+  updateCartUI();
+  // Welcome toast for admin
+  setTimeout(()=>toast('⚙️ قیمتیں سیٹ کرنے کے لیے Header میں ایڈمن بٹن دبائیں',5000),2000);
+})();
+</script>
+
+</body>
+</html>
